@@ -1,8 +1,7 @@
-//import React from 'react'
+// import { react } from "React"
 
 const Navbar = () => {
   return (
-
     <div>Navbar</div>
   )
 }
