@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+//rwan 5:56:17
+import userRouter from "./routes/userRoute";
+
+//api endpoints rwan 5:55:53, ahmed will create "app" so it may not work before that
+app.use('/api/user',userRouter)
+
+=======
 import express from 'express'
 import cors from 'cors'
 import 'dotenv/config'
@@ -18,3 +26,4 @@ app.get('/',(req,res)=>{
 });
 
 app.listen(port, ()=> console.log("Server Started on Port : "+ port));
+>>>>>>> 43ba0015cf41b4009a71d6388425ad6408770133
