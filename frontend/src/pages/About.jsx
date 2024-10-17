@@ -1,6 +1,7 @@
 // import React from 'react'
 import { assets } from "../assets/assets";
 import Title from "../components/Title";
+import NewsLetterBox from "../components/NewsLetterBox";
 
 const About = () => {
   return (
@@ -41,8 +42,8 @@ const About = () => {
           <p className="text-gray-600">dummy text</p>
         </div>
       </div>
-      {/* not its time i think uncomment in the very end */}
-      {/* <NewsLetterBox/> */}
+
+      <NewsLetterBox/>
     </div>
   );
 };

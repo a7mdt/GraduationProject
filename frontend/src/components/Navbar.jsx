@@ -10,7 +10,8 @@ const Navbar = () => {
   const [visible, setVisible] = useState(false);
 
   //rwan 2:37:43
-  const { setShowSearch } = useContext(ShopContext);
+  /*added by afaf  , getCartCount} */
+  const { setShowSearch  , getCartCount } = useContext(ShopContext);
   //rwan end
 
   return (
@@ -46,11 +47,15 @@ const Navbar = () => {
         />
         {/* end */}
         <div className="group relative">
+          {/* add by afaf. added only the link */}
+         <Link to='/Login'>
           <img
             className="w-5 cursor-pointer"
             src={assets.profile_icon}
             alt=""
-          />
+            />
+            </Link>
+            {/*end  */}
           <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
             <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
               <p className="curseo-pointer hover:text-black">My Profile</p>
@@ -62,7 +67,7 @@ const Navbar = () => {
         <Link to="/cart" className="relative">
           <img src={assets.cart_icon} className="w-5 min-w-5" alt="" />
           <p className="absolute right-[-5px] bottom-[-5px] w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]">
-            10
+            {getCartCount()}
           </p>
         </Link>
         <img

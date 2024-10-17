@@ -29,7 +29,6 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      {/* not its time i think uncomment in the very end */}
      <NewsLetterBox/>
     </div>
   );
