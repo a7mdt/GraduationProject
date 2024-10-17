@@ -11,11 +11,15 @@ import Product from "./pages/Product";
 import { Route, Routes } from "react-router";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import SearchBar from "./components/SearchBar";
 
 const App = () => {
   return (
     <div className="px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]">
       <Navbar/>
+      {/* rwan 2:33:11 */}
+      <SearchBar/>
+      {/* rwan end */}
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/collection" element={<Collection/>}/>
