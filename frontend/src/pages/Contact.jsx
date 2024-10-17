@@ -1,6 +1,7 @@
 // import React from 'react'
 import Title from "../components/Title";
 import { assets } from "../assets/assets";
+import NewsLetterBox from "../components/NewsLetterBox";
 
 const Contact = () => {
   return (
@@ -29,7 +30,7 @@ const Contact = () => {
         </div>
       </div>
       {/* not its time i think uncomment in the very end */}
-      {/* <NewsLetterBox/> */}
+     <NewsLetterBox/>
     </div>
   );
 };
