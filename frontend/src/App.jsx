@@ -23,6 +23,7 @@ const App = () => {
       {/* rwan 2:33:11 */}
       <SearchBar/>
       {/* rwan end */}
+      <ToastContainer/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/collection" element={<Collection/>}/>
