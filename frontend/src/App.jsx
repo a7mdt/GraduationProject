@@ -12,6 +12,9 @@ import { Route, Routes } from "react-router";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SearchBar from "./components/SearchBar";
+//afaf
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
   return (
@@ -20,6 +23,7 @@ const App = () => {
       {/* rwan 2:33:11 */}
       <SearchBar/>
       {/* rwan end */}
+      <ToastContainer/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/collection" element={<Collection/>}/>
