@@ -1,5 +1,6 @@
 // import React from 'react'
 import { assets } from "../assets/assets";
+import NewsLetterBox from "../components/NewsLetterBox";
 import Title from "../components/Title";
 
 const About = () => {
@@ -30,21 +31,23 @@ const About = () => {
       <div className="flex flex-col md:flex-row text-sm mb-20">
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex-col gap-5">
           <b>Quality Assurance:</b>
-          <p className="text-gray-600">dummy text</p>
+          <p className="text-gray-600">dummy text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus cupiditate facere consequatur, architecto labore exercitationem dolores saepe distinctio itaque dolor sit,</p>
         </div>
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex-col gap-5">
           <b>Convenience:</b>
-          <p className="text-gray-600">dummy text</p>
+          <p className="text-gray-600">dummy text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus cupiditate facere consequatur</p>
         </div>
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex-col gap-5">
           <b>Exceptional Customer Service:</b>
-          <p className="text-gray-600">dummy text</p>
+          <p className="text-gray-600">dummy text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus cupiditate facere consequatur</p>
         </div>
       </div>
-      {/* not its time i think uncomment in the very end */}
-      {/* <NewsLetterBox/> */}
+      
+     
+      <NewsLetterBox/>
     </div>
   );
 };
 
 export default About;
+z
