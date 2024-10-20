@@ -106,28 +106,28 @@ const Collection = () => {
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Men"}
+                value={"Paints"}
                 onChange={toggleCategory}
               />{" "}
-              Men
+              Paints
             </p>
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Women"}
+                value={"Statues"}
                 onChange={toggleCategory}
               />{" "}
-              Women
+              Statues
             </p>
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Kids"}
+                value={"Photography"}
                 onChange={toggleCategory}
               />{" "}
-              Kids
+              Photography
             </p>
           </div>
         </div>
@@ -144,21 +144,21 @@ const Collection = () => {
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Topwear"}
+                value={"Classic"}
                 onChange={toggleSubCategory}
               />
-              Topwear Topwear
+              Classic
             </p>
             <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
-                value={"Bottomwear"}
+                value={"Modern"}
                 onChange={toggleSubCategory}
               />
-              Bottomwear Bottomwear
+              Modern
             </p>
-            <p className="flex gap-2">
+            {/* <p className="flex gap-2">
               <input
                 className="w-3"
                 type="checkbox"
@@ -166,7 +166,7 @@ const Collection = () => {
                 onChange={toggleSubCategory}
               />
               Winterwear Winterwear
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
