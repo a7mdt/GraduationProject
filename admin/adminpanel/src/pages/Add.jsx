@@ -4,9 +4,6 @@ import Swal from 'sweetalert2';
 
 const Add = () => {
   const [image1, setImg1] = useState(false);
-  const [image2, setImg2] = useState(false);
-  const [image3, setImg3] = useState(false);
-  const [image4, setImg4] = useState(false);
 
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
@@ -14,9 +11,8 @@ const Add = () => {
   const [category, setCategory] = useState("Men");
   const [subCategory, setSubCategory] = useState("Topwear");
 
-  const [sizes, setSizes] = useState([]);
-
-  const [bestseller, setBestseller] = useState(false);
+  const [width, setWidth] = useState([]);
+  const [height, setHeight] = useState([]);
 
   const onSumbitHandler = async (e) => {
     e.preventDefault();
@@ -27,13 +23,10 @@ const Add = () => {
       price,
       category,
       subCategory,
-      sizes,
-      bestseller,
+      width,
+      height,
       images: [
         image1 ? URL.createObjectURL(image1) : null,
-        image2 ? URL.createObjectURL(image2) : null,
-        image3 ? URL.createObjectURL(image3) : null,
-        image4 ? URL.createObjectURL(image4) : null,
       ],
     };
   
@@ -49,14 +42,11 @@ const Add = () => {
     setName("");
     setDescription("");
     setPrice("");
-    setCategory("Men");
-    setSubCategory("Topwear");
-    setSizes([]);
-    setBestseller(false);
+    setCategory("Statues");
+    setSubCategory("Classic");
+    setWidth("");
+    setHeight("");
     setImg1(false);
-    setImg2(false);
-    setImg3(false);
-    setImg4(false);
   }
 
   return (
@@ -77,45 +67,6 @@ const Add = () => {
               hidden
             />
           </label>
-          <label htmlFor="image2">
-            <img
-              className="w-20 cursor-pointer"
-              src={!image2 ? assets.upload_area : URL.createObjectURL(image2)}
-              alt=""
-            />
-            <input
-              onChange={(e) => setImg2(e.target.files[0])}
-              type="file"
-              id="image2"
-              hidden
-            />
-          </label>
-          <label htmlFor="image3">
-            <img
-              className="w-20 cursor-pointer"
-              src={!image3 ? assets.upload_area : URL.createObjectURL(image3)}
-              alt=""
-            />
-            <input
-              onChange={(e) => setImg3(e.target.files[0])}
-              type="file"
-              id="image3"
-              hidden
-            />
-          </label>
-          <label htmlFor="image4">
-            <img
-              className="w-20 cursor-pointer"
-              src={!image4 ? assets.upload_area : URL.createObjectURL(image4)}
-              alt=""
-            />
-            <input
-              onChange={(e) => setImg4(e.target.files[0])}
-              type="file"
-              id="image4"
-              hidden
-            />
-          </label>
         </div>
       </div>
 
@@ -129,6 +80,31 @@ const Add = () => {
           placeholder="Type here"
           required
         />
+      </div>
+
+      <div>
+        <p className="mb-2">Product Size</p>
+        <div className="flex items-center space-x-2">
+        <input
+          onChange={(e) => setWidth(e.target.value)}
+          value={width}
+          className="w-full max-w-[220px] px-3 py-2"
+          type="text"
+          placeholder="Width"
+          required
+        />
+        <span className="text-sm font-bold">X</span>
+        <input
+          onChange={(e) => setHeight(e.target.value)}
+          value={height}
+          className="w-full max-w-[220px] px-3 py-2"
+          type="text"
+          placeholder="Height"
+          required
+        />
+        <span className="text-sm font-bold">CM</span>
+        </div>
+        
       </div>
 
       <div className="w-full">
@@ -151,9 +127,9 @@ const Add = () => {
             value={category}
             className="w-full px-3 py-2"
           >
-            <option value="Men">Men</option>
-            <option value="Women">Women</option>
-            <option value="Kids">Kids</option>
+            <option value="Statues">Statues</option>
+            <option value="Photography">Photography</option>
+            <option value="Paints">Paints</option>
           </select>
         </div>
 
@@ -164,9 +140,8 @@ const Add = () => {
             value={subCategory}
             className="w-full px-3 py-2"
           >
-            <option value="Topwear">Topwear</option>
-            <option value="Bottomwear">Bottomwear</option>
-            <option value="Winterwear">Winterwear</option>
+            <option value="Topwear">Classic</option>
+            <option value="Modern">Modern</option>
           </select>
         </div>
 
@@ -180,113 +155,6 @@ const Add = () => {
             placeholder="25"
           />
         </div>
-      </div>
-
-      <div>
-        <p className="mb-2">Product Sizes</p>
-        <div className="flex gap-3">
-          <div
-            onClick={() =>
-              setSizes((prev) =>
-                prev.includes("S")
-                  ? prev.filter((item) => item !== "S")
-                  : [...prev, "S"]
-              )
-            }
-          >
-            <p
-              className={`${
-                sizes.includes("S") ? "bg-pink-100" : "bg-slate-200"
-              } px-3 py-1 cursor-pointer`}
-            >
-              S
-            </p>
-          </div>
-
-          <div
-            onClick={() =>
-              setSizes((prev) =>
-                prev.includes("M")
-                  ? prev.filter((item) => item !== "S")
-                  : [...prev, "M"]
-              )
-            }
-          >
-            <p
-              className={`${
-                sizes.includes("M") ? "bg-pink-100" : "bg-slate-200"
-              } px-3 py-1 cursor-pointer`}
-            >
-              M
-            </p>
-          </div>
-
-          <div
-            onClick={() =>
-              setSizes((prev) =>
-                prev.includes("L")
-                  ? prev.filter((item) => item !== "S")
-                  : [...prev, "L"]
-              )
-            }
-          >
-            <p
-              className={`${
-                sizes.includes("L") ? "bg-pink-100" : "bg-slate-200"
-              } px-3 py-1 cursor-pointer`}
-            >
-              L
-            </p>
-          </div>
-
-          <div
-            onClick={() =>
-              setSizes((prev) =>
-                prev.includes("XL")
-                  ? prev.filter((item) => item !== "S")
-                  : [...prev, "XL"]
-              )
-            }
-          >
-            <p
-              className={`${
-                sizes.includes("XL") ? "bg-pink-100" : "bg-slate-200"
-              } px-3 py-1 cursor-pointer`}
-            >
-              XL
-            </p>
-          </div>
-
-          <div
-            onClick={() =>
-              setSizes((prev) =>
-                prev.includes("XXL")
-                  ? prev.filter((item) => item !== "S")
-                  : [...prev, "XXL"]
-              )
-            }
-          >
-            <p
-              className={`${
-                sizes.includes("XXL") ? "bg-pink-100" : "bg-slate-200"
-              } px-3 py-1 cursor-pointer`}
-            >
-              XXL
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex gap-2 mt-2">
-        <input
-          onChange={() => setBestseller((prev) => !prev)}
-          checked={bestseller}
-          type="checkbox"
-          id="bestseller"
-        />
-        <label className="cursor-pointer" htmlFor="bestseller">
-          Add to Best Seller
-        </label>
       </div>
 
       <button type="sumbit" className="w-28 py-3 mt-4 bg-black text-white">

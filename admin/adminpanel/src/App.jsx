@@ -6,6 +6,9 @@ import Add from "./pages/Add";
 import List from "./pages/List";
 import Orders from "./pages/Orders";
 import Login from "./pages/Login";
+import Users from "./pages/Users";
+
+export const currency = "$";
 
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -25,6 +28,7 @@ const App = () => {
                 <Route path="/add" element={<Add />} />
                 <Route path="/list" element={<List />} />
                 <Route path="/orders" element={<Orders />} />
+                <Route path="/users" element={<Users />} />
               </Routes>
             </div>
           </div>
