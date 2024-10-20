@@ -144,15 +144,16 @@ const Navbar = () => {
 
   useEffect(() => {
     // Retrieve the logged-in user's name from local storage
-    const loggedInUser = localStorage.getItem("loggedInUser");
-    if (loggedInUser) {
-      setUsername(loggedInUser);
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    if (loggedInUser && loggedInUser.name) {
+      setUsername(loggedInUser.name);
     }
   }, []);
 
   // Logout function
   const handleLogout = () => {
     localStorage.removeItem("loggedInUser");
+    localStorage.setItem("isLoggedIn", "false");
     setUsername("");
     setShowDropdown(false); // Close the dropdown on logout
     // Optionally redirect to login page

@@ -167,16 +167,24 @@ const Login = () => {
       users.push(newUser);
       localStorage.setItem("users", JSON.stringify(users));
 
-      // Immediately navigate to the login page after sign-up
+      // Redirect the user to the login page after successful sign-up
       setCurrentState("Login");
+      Swal({
+        title: "Success!",
+        text: "Account created successfully! Please log in.",
+        icon: "success",
+        button: "OK",
+      });
       navigate("/login"); // Navigate to the login page
+
     } else if (currentState === "Login") {
       const foundUser = users.find(
         (user) => user.email === email && user.password === password
       );
 
       if (foundUser) {
-        localStorage.setItem("loggedInUser", foundUser.name);
+        localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
+        localStorage.setItem("isLoggedIn", "true");
         window.dispatchEvent(new Event("storage"));
         navigate("/"); // Navigate to homepage
       } else {
