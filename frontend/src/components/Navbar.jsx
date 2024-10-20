@@ -61,11 +61,10 @@ const Navbar = () => {
             {/*end  */}
           <div className="group-hover:block hidden absolute dropdown-menu right-0 pt-4">
             <div className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded">
-              <p className="curseo-pointer hover:text-black">My Profile</p>
               {/* link added by rwan not in the video */}
               <Link to='/Orders'><p className="curseo-pointer hover:text-black">Orders</p></Link>
               {/* link added by rwan not in the video */}
-              <Link to='/Login'><p className="curseo-pointer hover:text-black">Logout</p></Link>
+              <Link to='/Login'><p className="curseo-pointer hover:text-black">Login</p></Link>
             </div>
           </div>
         </div>
