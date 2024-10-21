@@ -133,14 +133,16 @@
 
 import { useContext, useState, useEffect } from "react";
 import { assets } from "../assets/assets";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { ShopContext } from "../context/ShopContext";
 
 const Navbar = () => {
   const [visible, setVisible] = useState(false);
   const [username, setUsername] = useState(""); // State for username
-  const [showDropdown, setShowDropdown] = useState(false); // State for dropdown visibility
+  const [showDropdown, setShowDropdown] = useState(false); // State for profile dropdown visibility
+  const [showUserAdminDropdown, setShowUserAdminDropdown] = useState(false); // State for User/Admin dropdown
   const { setShowSearch, getCartCount } = useContext(ShopContext);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Retrieve the logged-in user's name from local storage
@@ -156,28 +158,21 @@ const Navbar = () => {
     localStorage.setItem("isLoggedIn", "false");
     setUsername("");
     setShowDropdown(false); // Close the dropdown on logout
-    // Optionally redirect to login page
   };
 
-  // Toggle dropdown visibility
-  const toggleDropdown = () => {
-    setShowDropdown((prev) => !prev);
+  // Toggle User/Admin dropdown visibility
+  const toggleUserAdminDropdown = () => {
+    setShowUserAdminDropdown((prev) => !prev);
   };
 
-  // Close dropdown when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      const dropdown = document.getElementById("dropdown-menu");
-      if (dropdown && !dropdown.contains(event.target)) {
-        setShowDropdown(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  // Redirect to user or admin login page
+  const handleUserAdminSelect = (type) => {
+    if (type === "user") {
+      navigate("login"); // Redirect to user login page
+    } else if (type === "admin") {
+      navigate("/admin-login"); // Redirect to admin login page
+    }
+  };
 
   return (
     <div className="flex items-center justify-between py-5 font-medium">
@@ -214,7 +209,7 @@ const Navbar = () => {
         {username ? (
           <div className="relative">
             <p
-              onClick={toggleDropdown}
+              onClick={() => setShowDropdown(!showDropdown)}
               className="text-black font-semibold cursor-pointer flex items-center"
             >
               Hello, {username} <span className="ml-1">&#9662;</span> {/* Down arrow */}
@@ -222,30 +217,49 @@ const Navbar = () => {
             {showDropdown && (
               <div
                 id="dropdown-menu"
-                className="absolute right-0 mt-2 w-48 bg-white shadow-md z-10 rounded-lg overflow-hidden"
+                className="absolute right-0 mt-2 w-37 bg-white shadow-md z-10 rounded-lg overflow-hidden"
               >
                 <Link to="/Orders">
-                  <button className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200">
+                  <button className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded cursor-pointer hover:text-black">
                     Orders
                   </button>
                 </Link>
                 <button
                   onClick={handleLogout}
-                  className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200"
+                  className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded cursor-pointer hover:text-black"
                 >
                   Logout
                 </button>
               </div>
-            )}
+          )}
           </div>
         ) : (
-          <Link to="/Login">
+          <div className="relative">
             <img
               className="w-5 cursor-pointer"
               src={assets.profile_icon}
               alt=""
+              onClick={toggleUserAdminDropdown}
             />
-          </Link>
+            {showUserAdminDropdown && (
+              <div
+                className="absolute right-0 mt-2 w-37 bg-white shadow-md z-10 rounded-lg overflow-hidden"
+              >
+                <button
+                  onClick={() => handleUserAdminSelect("user")}
+                  className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded cursor-pointer hover:text-black"
+                >
+                  User
+                </button>
+                <button
+                  onClick={() => handleUserAdminSelect("admin")}
+                  className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded cursor-pointer hover:text-black"
+                >
+                  Admin
+                </button>
+              </div>
+            )}
+          </div>
         )}
         <Link to="/cart" className="relative">
           <img src={assets.cart_icon} className="w-5 min-w-5" alt="" />

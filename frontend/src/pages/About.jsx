@@ -17,10 +17,16 @@ const About = () => {
           alt=""
         />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
-          <p>about text slkjdfsfklsjfldksfjsflsjflsfjfjsfjfdslfk</p>
-          <p>another about text fdgkdfjdlkjlkfjskfjsfklsjflsknsdkfjskfjsf</p>
+          <p>Welcome to Diagon Alley, a space where creativity and inspiration come together to celebrate the beauty of art. 
+            Our gallery was founded with the vision of providing a platform for both emerging and
+             established artists to showcase their work in a dynamic and inclusive environment.</p>
+          <p>We believe in the power of art to connect people, evoke emotion, and inspire thought.
+            Our exhibitions feature a diverse range of mediums, including painting, 
+            sculpture, photography, digital art, and more, offering something for every art enthusiast.</p>
           <b className="text-gray-800">Our Mission</b>
-          <p>dummy text jsdfoisjdofijdsiofjsfjsif</p>
+          <p>At Diagon Alley, our mission is to support and promote artistic talent while fostering a sense of 
+            community around the appreciation of art. We are committed to curating exhibitions that challenge perceptions, 
+            spark conversations, and engage viewers on a deep, personal level.</p>
         </div>
       </div>
 
@@ -31,15 +37,15 @@ const About = () => {
       <div className="flex flex-col md:flex-row text-sm mb-20">
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex-col gap-5">
           <b>Quality Assurance:</b>
-          <p className="text-gray-600">dummy text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus cupiditate facere consequatur, architecto labore exercitationem dolores saepe distinctio itaque dolor sit,</p>
+          <p className="text-gray-600">We ensure the highest standards in every artwork displayed at Diagon Alley. Each piece is carefully selected for its authenticity, craftsmanship, and artistic integrity, so you can trust the quality of every work you encounter.</p>
         </div>
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex-col gap-5">
           <b>Convenience:</b>
-          <p className="text-gray-600">dummy text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus cupiditate facere consequatur</p>
+          <p className="text-gray-600">Your experience with us is designed to be seamless. Whether you're browsing online, visiting the gallery, or purchasing art, we offer easy navigation, flexible appointments, and secure transactions to make everything as smooth as possible.</p>
         </div>
         <div className="border px-10 md:px-16 py-8 sm:py-20 flex-col gap-5">
           <b>Exceptional Customer Service:</b>
-          <p className="text-gray-600">dummy text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus cupiditate facere consequatur</p>
+          <p className="text-gray-600">Our team is here to provide expert advice and personalized assistance. We’re dedicated to making your experience enjoyable, whether you're looking to buy art, attend an event, or simply explore. Exceptional service is at the heart of everything we do.</p>
         </div>
       </div>
       
