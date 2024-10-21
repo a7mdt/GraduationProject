@@ -17,11 +17,16 @@ const About = () => {
           alt=""
         />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
-          <p>Welcome to [Gallery Name], a space where creativity and inspiration come together to celebrate the beauty of art. 
-          Our gallery was founded with the vision of providing a platform for both emerging and established artists to showcase their work in a dynamic and inclusive environment.</p>
-          <p>another about text fdgkdfjdlkjlkfjskfjsfklsjflsknsdkfjskfjsf</p>
+          <p>Welcome to Diagon Alley, a space where creativity and inspiration come together to celebrate the beauty of art. 
+            Our gallery was founded with the vision of providing a platform for both emerging and
+             established artists to showcase their work in a dynamic and inclusive environment.</p>
+          <p>We believe in the power of art to connect people, evoke emotion, and inspire thought.
+            Our exhibitions feature a diverse range of mediums, including painting, 
+            sculpture, photography, digital art, and more, offering something for every art enthusiast.</p>
           <b className="text-gray-800">Our Mission</b>
-          <p>dummy text jsdfoisjdofijdsiofjsfjsif</p>
+          <p>At [Gallery Name], our mission is to support and promote artistic talent while fostering a sense of 
+            community around the appreciation of art. We are committed to curating exhibitions that challenge perceptions, 
+            spark conversations, and engage viewers on a deep, personal level.</p>
         </div>
       </div>
 
