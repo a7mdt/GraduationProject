@@ -49,7 +49,7 @@
 //   const [cartItems, setCartItems] = useState({});
 //   const navigate = useNavigate();
 
-//   //not working for some reson 
+//   //not working for some reson
 //   const addToCart = async (itemId, size) => {
 //     if (!size) {
 //       toast.error("Select Product Size");
@@ -282,9 +282,6 @@
 // // // we back at (4:13:27) & left at (4:14:54)
 // // // we back at (4:16:42)
 
-
-
-
 // // import { createContext, useState } from "react";
 // // import { products } from "../assets/assets";
 // // import { toast } from "react-toastify";
@@ -382,7 +379,6 @@
 
 // // export default ShopContextProvider;
 
-
 import { createContext, useState } from "react";
 import { products } from "../assets/assets";
 import { toast } from "react-toastify";
@@ -405,8 +401,6 @@ const ShopContextProvider = (props) => {
 
   // Add item to cart
   const addToCart = (itemId, size) => {
-
-
     let cartData = structuredClone(cartItems);
 
     if (cartData[itemId]) {
@@ -425,7 +419,10 @@ const ShopContextProvider = (props) => {
   // Get total count of items in cart
   const getCartCount = () => {
     return Object.values(cartItems).reduce((count, itemSizes) => {
-      return count + Object.values(itemSizes).reduce((sum, quantity) => sum + quantity, 0);
+      return (
+        count +
+        Object.values(itemSizes).reduce((sum, quantity) => sum + quantity, 0)
+      );
     }, 0);
   };
 
@@ -491,4 +488,3 @@ const ShopContextProvider = (props) => {
 };
 
 export default ShopContextProvider;
-
