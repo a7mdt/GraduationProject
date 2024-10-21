@@ -17,7 +17,8 @@ const About = () => {
           alt=""
         />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
-          <p>about text slkjdfsfklsjfldksfjsflsjflsfjfjsfjfdslfkkkk</p>
+          <p>Welcome to [Gallery Name], a space where creativity and inspiration come together to celebrate the beauty of art. 
+          Our gallery was founded with the vision of providing a platform for both emerging and established artists to showcase their work in a dynamic and inclusive environment.</p>
           <p>another about text fdgkdfjdlkjlkfjskfjsfklsjflsknsdkfjskfjsf</p>
           <b className="text-gray-800">Our Mission</b>
           <p>dummy text jsdfoisjdofijdsiofjsfjsif</p>
