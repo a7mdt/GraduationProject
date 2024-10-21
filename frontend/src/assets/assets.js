@@ -82,6 +82,7 @@ import p_img79 from "./p_img79.png";
 import p_img80 from "./p_img80.png";
 
 
+
 import logo from "./logo.png";
 import hero_img from "./hero_img.png";
 import cart_icon from "./cart_icon.png";
@@ -101,6 +102,8 @@ import razorpay_logo from "./razorpay_logo.png";
 import stripe_logo from "./stripe_logo.png";
 import cross_icon from "./cross_icon.png";
 import ForHome from './ForHome.png'
+import about from './about.png'
+import repair from "./repair.png";
 
 export const assets = {
   logo,
@@ -122,6 +125,8 @@ export const assets = {
   stripe_logo,
   cross_icon,
   ForHome,
+  about,
+  repair,
 };
 export const products = [
   {
@@ -799,13 +804,13 @@ export const products = [
   },
   {
     _id: "aaaca",
-    name: "Paint",
+    name: "Statue",
     description:
-      "Paint.",
+      "Statue.",
     price: 350,
     image: [p_img53],
-    category: "Statue",
-    subCategory: "Modern",
+    category: "Statues",
+    subCategory: "Classic",
     size: "500*400cm",
     date: 1716668445448,
 
@@ -818,7 +823,7 @@ export const products = [
     price: 350,
     image: [p_img54],
     category: "Statues",
-    subCategory: "Modern",
+    subCategory: "Classic",
     size: "500*400cm",
     date: 1716668445448,
 
