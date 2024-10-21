@@ -1,20 +1,18 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
 const Login = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const onSumbitHandler = async (e) => {
     e.preventDefault();
 
     if (email === "amary@gmail.com" && password === "amary") {
-      Swal.fire({
-        icon: "success",
-        title: "Login successful",
-        text: "Welcome to the Admin Panel!",
-      });
       setIsLoggedIn(true);
+      navigate("/add");
     } else {
       Swal.fire({
         icon: "error",

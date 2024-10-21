@@ -126,6 +126,7 @@ export const assets = {
   stripe_logo,
   cross_icon,
   ForHome,
+  admin_img,
 
   admin_img,
   about,
