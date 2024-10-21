@@ -9,7 +9,7 @@ const LatestCollection = () => {
 
   useEffect(() => {
     if (products) {
-      setLatestProducts(products.slice(0, 10));
+      setLatestProducts(products.slice(40, 50));
     }
   }, [products]);
 
