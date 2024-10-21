@@ -142,12 +142,69 @@ const Login = () => {
     }
   }, [navigate]);
 
+  // const onSubmitHandler = (event) => {
+  //   event.preventDefault();
+
+  //   // Retrieve users from local storage
+  //   const users = JSON.parse(localStorage.getItem("users")) || [];
+
+  //   if (currentState === "Sign Up") {
+  //     // Check if the email is already registered
+  //     const existingUser = users.find((user) => user.email === email);
+  //     if (existingUser) {
+  //       // Show SweetAlert if email already signed up
+  //       Swal({
+  //         title: "Error!",
+  //         text: "This email has already signed up.",
+  //         icon: "error",
+  //         button: "OK",
+  //       });
+  //       return; // Exit the function if the email is already taken
+  //     }
+
+  //     // Store the signup details in local storage
+  //     const newUser = { name, email, password };
+  //     users.push(newUser);
+  //     localStorage.setItem("users", JSON.stringify(users));
+
+  //     // Redirect the user to the login page after successful sign-up
+  //     setCurrentState("Login");
+  //     Swal({
+  //       title: "Success!",
+  //       text: "Account created successfully! Please log in.",
+  //       icon: "success",
+  //       button: "OK",
+  //     });
+  //     navigate("/login"); // Navigate to the login page
+
+  //   } else if (currentState === "Login") {
+  //     const foundUser = users.find(
+  //       (user) => user.email === email && user.password === password
+  //     );
+
+  //     if (foundUser) {
+  //       localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
+  //       localStorage.setItem("isLoggedIn", "true");
+  //       window.dispatchEvent(new Event("storage"));
+  //       navigate("/"); // Navigate to homepage
+  //     } else {
+  //       Swal({
+  //         title: "Invalid Credentials!",
+  //         text: "Invalid email or password. Please try again.",
+  //         icon: "error",
+  //         button: "OK",
+  //       });
+  //     }
+  //   }
+  // };
+
+//this make the name appear as soon as it go to home page no need to refresh
   const onSubmitHandler = (event) => {
     event.preventDefault();
-
+  
     // Retrieve users from local storage
     const users = JSON.parse(localStorage.getItem("users")) || [];
-
+  
     if (currentState === "Sign Up") {
       // Check if the email is already registered
       const existingUser = users.find((user) => user.email === email);
@@ -161,12 +218,12 @@ const Login = () => {
         });
         return; // Exit the function if the email is already taken
       }
-
+  
       // Store the signup details in local storage
       const newUser = { name, email, password };
       users.push(newUser);
       localStorage.setItem("users", JSON.stringify(users));
-
+  
       // Redirect the user to the login page after successful sign-up
       setCurrentState("Login");
       Swal({
@@ -176,17 +233,19 @@ const Login = () => {
         button: "OK",
       });
       navigate("/login"); // Navigate to the login page
-
+  
     } else if (currentState === "Login") {
       const foundUser = users.find(
         (user) => user.email === email && user.password === password
       );
-
+  
       if (foundUser) {
         localStorage.setItem("loggedInUser", JSON.stringify(foundUser));
         localStorage.setItem("isLoggedIn", "true");
         window.dispatchEvent(new Event("storage"));
-        navigate("/"); // Navigate to homepage
+        
+        // Use window.location.href to refresh the homepage
+        window.location.href = "/"; // Redirect with a refresh to the homepage
       } else {
         Swal({
           title: "Invalid Credentials!",
@@ -197,6 +256,7 @@ const Login = () => {
       }
     }
   };
+  
 
   return (
     <form
