@@ -126,6 +126,7 @@ export const assets = {
   stripe_logo,
   cross_icon,
   ForHome,
+  admin_img,
 
   admin_img,
   about,
@@ -137,7 +138,7 @@ export const products = [
     _id: "aaaaa",
     name: "Statues of a women",
     description:
-      "A Women seeking freedom.",
+      "A dynamic, flowing sculpture of a woman, possibly in motion or dance, with an abstract design that highlights elegance and fluidity.",
     price: 800,
     image: [p_img1],
     category: "Statues",
@@ -150,7 +151,7 @@ export const products = [
     _id: "aaaab",
     name: "A Women Reading",
     description:
-      "A Women enjoying herself.",
+      "A painting or sculpture of a woman sitting in a serene environment, engrossed in reading a book, wearing a long, detailed dress.",
     price: 480,
     image: [p_img2],
     category: "Paints",
@@ -163,7 +164,7 @@ export const products = [
     _id: "aaaac",
     name: "Photo of The Nile",
     description:
-      "A Beautiful Scene Of The Nile.",
+      "A picturesque view of the Nile River at sunset, framed by an arched window, showcasing tranquil water and silhouettes of trees and a boat.",
     price: 250,
     image: [p_img3],
     category: "Photography",
@@ -176,7 +177,7 @@ export const products = [
     _id: "aaaad",
     name: "The Flower",
     description:
-      "Painting Of Some Flowers.",
+      "A minimalistic, abstract painting featuring large floral patterns in neutral and dark tones.",
     price: 450,
     image: [p_img4],
     category: "Paints",
@@ -189,7 +190,7 @@ export const products = [
     _id: "aaaae",
     name: "Mysterious Lady",
     description:
-      "The Iconic Lady.",
+      "An abstract sculpture of a woman with a curvaceous figure wearing a wide-brimmed hat, possibly conveying a sense of mystery and elegance.",
     price: 890,
     image: [p_img5],
     category: "Statues",
@@ -202,7 +203,7 @@ export const products = [
     _id: "aaaaf",
     name: "The Pyramids",
     description:
-      "Photo Of Our History.",
+      "A scenic view of the pyramids, framed by an arch, with warm colors reflecting the desert landscape.",
     price: 200,
     image: [p_img6],
     category: "Photography",
@@ -215,7 +216,7 @@ export const products = [
     _id: "aaaag",
     name: "Wood Carving",
     description:
-      "Wall Decpration.",
+      "A 3D abstract wall art piece that appears to be crafted from wood, featuring flowing, organic shapes resembling folded fabric or natural elements.",
     price: 590,
     image: [p_img7],
     category: "Paints",
@@ -228,7 +229,7 @@ export const products = [
     _id: "aaaah",
     name: "Creative Painting",
     description:
-      "Wall Decpration.",
+      "A large contemporary painting with a mix of neutral tones and abstract textures, possibly conveying a blend of nature and urban influences.",
     price: 540,
     image: [p_img8],
     category: "Paints",
@@ -254,7 +255,7 @@ export const products = [
     _id: "aaaaj",
     name: "Wood Carving",
     description:
-      "Wall Decpration.",
+      " A textured wall art piece, made from wood, featuring an organic, flowing design with tree-like branches in a minimalist room setup.",
     price: 800,
     image: [p_img10],
     category: "Paints",
@@ -267,7 +268,7 @@ export const products = [
     _id: "aaaak",
     name: "Wood Carving",
     description:
-      "Wall Decpration.",
+      "A modern 3D wall sculpture with bold, dark flowing lines, offering a sophisticated touch to a contemporary living space.",
     price: 800,
     image: [p_img11],
     category: "Paints",
@@ -293,7 +294,7 @@ export const products = [
     _id: "aaaam",
     name: "Status Of Beauty",
     description:
-      "Status Of a Lady.",
+      "A bronze-like sculpture of a graceful woman in motion, perhaps dancing or holding a symbolic pose, evoking classical beauty and elegance.",
     price: 300,
     image: [p_img13],
     category: "Statues",
@@ -306,7 +307,7 @@ export const products = [
     _id: "aaaan",
     name: "The Pyramids",
     description:
-      "Our History.",
+      "A mesmerizing view of the pyramids under a full moon, with camels in the distance, bathed in warm, golden light that enhances the mystery of the desert.",
     price: 420,
     image: [p_img14],
     category: "Photography",
@@ -319,7 +320,7 @@ export const products = [
     _id: "aaaao",
     name: "The Pharos",
     description:
-      "Our History.",
+      "An Egyptian-themed artwork featuring figures from ancient history, adorned in traditional attire and surrounded by hieroglyphics, representing the rich culture of the Pharaohs.",
     price: 500,
     image: [p_img15],
     category: "Paints",
@@ -332,7 +333,7 @@ export const products = [
     _id: "aaaap",
     name: "The Home",
     description:
-      "Home.",
+      " A rustic, homely art piece featuring a detailed door or entryway, suggesting warmth and tradition through its earthy tones and architectural design.",
     price: 270,
     image: [p_img16], category: "Photography",
     subCategory: "Classic",
@@ -344,7 +345,7 @@ export const products = [
     _id: "aaaaq",
     name: "Paint",
     description:
-      "Paint.",
+      "A painting of a European-style fountain in a sunlit courtyard, surrounded by greenery, evoking a peaceful and timeless atmosphere.",
     price: 150,
     image: [p_img17],
     category: "Paints",
@@ -357,7 +358,7 @@ export const products = [
     _id: "aaaar",
     name: "Photography",
     description:
-      "Photography.",
+      "A nostalgic photograph capturing a vintage telephone booth, likely evoking feelings of past technology and urban life.",
     price: 180,
     image: [p_img18],
     category: "Photography",
@@ -370,7 +371,7 @@ export const products = [
     _id: "aaaas",
     name: "Photography",
     description:
-      "Photography.",
+      "A vintage-style photograph capturing a classic car parked on a quiet street, with a tree casting long shadows, evoking a nostalgic suburban feel.",
     price: 160,
     image: [p_img19],
     category: "Photography",
@@ -383,7 +384,7 @@ export const products = [
     _id: "aaaat",
     name: "Statue",
     description:
-      "Statue.",
+      "A detailed statue of a woman holding a jug, possibly representing a traditional or mythological figure, with an air of calmness and grace.",
     price: 190,
     image: [p_img20],
     category: "Statues",
@@ -396,7 +397,7 @@ export const products = [
     _id: "aaaau",
     name: "Statue",
     description:
-      "Statue.",
+      "A minimalist sculpture of two abstract human figures, embracing each other in a simple, yet emotionally resonant design that symbolizes connection and affection.",
     price: 170,
     image: [p_img21],
     category: "Statues",
@@ -409,7 +410,7 @@ export const products = [
     _id: "aaaav",
     name: "Statue",
     description:
-      "Statue.",
+      "A bust of a head with flowers and vines arranged in it, creating a harmonious blend of nature and sculpture, giving an artistic and botanical feel to the decor.",
     price: 200,
     image: [p_img22],
     category: "Statues",
@@ -422,7 +423,7 @@ export const products = [
     _id: "aaaaw",
     name: "Photography",
     description:
-      "Photography.",
+      "A photograph featuring an old Vespa scooter parked outside a rustic door with closed shutters, evoking a sense of travel and vintage European street life.",
     price: 180,
     image: [p_img23],
     category: "Photography",
@@ -435,7 +436,7 @@ export const products = [
     _id: "aaaax",
     name: "Photography",
     description:
-      "Photography.",
+      " A picturesque view captured through an ornate, arch-shaped window, revealing a calm waterfront with distant buildings and mountains, framed in a vibrant blue and yellow design.",
     price: 210,
     image: [p_img24],
     category: "Photography",
@@ -448,7 +449,7 @@ export const products = [
     _id: "aaaay",
     name: "Photography",
     description:
-      "Photography.",
+      "A cozy interior photograph of a traditional setting, featuring warm lighting, plants, and rich textures, offering a glimpse into a comfortable and intimate living space.",
     price: 190,
     image: [p_img25],
     category: "Photography",
@@ -461,7 +462,7 @@ export const products = [
     _id: "aaaaz",
     name: "Statue",
     description:
-      "Statue.",
+      "Two sculpted heads used as planters, with greenery sprouting from them, blending art and nature in a creative way that brings life to the decor.",
     price: 220,
     image: [p_img26],
     category: "Statues",
@@ -474,7 +475,7 @@ export const products = [
     _id: "aaaba",
     name: "Photography",
     description:
-      "Photography.",
+      "A still-life composition featuring an open book, candle, and other vintage objects, set in a dimly lit environment, evoking a sense of nostalgia and mystery.",
     price: 200,
     image: [p_img27],
     category: "Photography",
@@ -487,7 +488,7 @@ export const products = [
     _id: "aaabb",
     name: "Paint",
     description:
-      "Paint.",
+      "A vibrant floral still-life painting with rich colors, capturing the beauty and elegance of a classical bouquet arrangement in a timeless style.",
     price: 230,
     image: [p_img28],
     category: "Paints",
@@ -500,7 +501,7 @@ export const products = [
     _id: "aaabc",
     name: "Statue",
     description:
-      "Statue.",
+      "A sleek, abstract statue of a dancer in a graceful pose, with minimalist details and flowing lines, symbolizing elegance and movement.",
     price: 210,
     image: [p_img29],
     category: "Statues",
@@ -513,7 +514,7 @@ export const products = [
     _id: "aaabd",
     name: "Photography",
     description:
-      "Photography.",
+      " A detailed photograph of a golden hexagonal object, possibly a piece of jewelry or ornament, presented in a rich, dark setting, highlighting its texture and craftsmanship.",
     price: 240,
     image: [p_img30],
     category: "Photography",
@@ -526,7 +527,7 @@ export const products = [
     _id: "aaabe",
     name: "Paint",
     description:
-      "Paint.",
+      "A delicate painting of two swans facing each other, surrounded by soft, pastel-colored flowers, capturing a serene and romantic mood.",
     price: 220,
     image: [p_img31],
     category: "Paints",
@@ -539,7 +540,7 @@ export const products = [
     _id: "aaabf",
     name: "Paint",
     description:
-      "Paint.",
+      "A lively painting depicting bright red flowers arranged in a pot on an artist’s easel, with a background suggesting an outdoor or garden scene.",
     price: 250,
     image: [p_img32],
     category: "Paints",
@@ -564,7 +565,7 @@ export const products = [
     _id: "aaabh",
     name: "Statue",
     description:
-      "Statue.",
+      "A graceful sculpture of a dancer in mid-pose, reminiscent of a ballerina, with flowing, dynamic lines that suggest movement and grace.",
     price: 260,
     image: [p_img34],
     category: "Statues",
@@ -577,7 +578,7 @@ export const products = [
     _id: "aaabi",
     name: "Statue",
     description:
-      "Statue.",
+      "An abstract representation of a family or group of three figures, crafted in a simple, modern style, exuding warmth and unity.",
     price: 240,
     image: [p_img35],
     category: "Statues",
@@ -590,7 +591,7 @@ export const products = [
     _id: "aaabj",
     name: "Statue",
     description:
-      "Statue.",
+      "A classical bust statue of a woman adorned with flowers, evoking an elegant and timeless style, possibly inspired by Greek or Roman art.",
     price: 270,
     image: [p_img36],
     category: "Statues",
@@ -603,7 +604,7 @@ export const products = [
     _id: "aaabk",
     name: "Statue",
     description:
-      "Statue.",
+      "A modern, abstract sculpture featuring two red roses placed in a unique white, textured vase, blending natural beauty with contemporary design.",
     price: 250,
     image: [p_img37],
     category: "Statues",
@@ -629,7 +630,7 @@ export const products = [
     _id: "aaabm",
     name: "Paint",
     description:
-      "Paint.",
+      "old wooden staircase with ivy growing around it. Warm lighting and a stained glass window create a cozy, rustic atmosphere.", 
     price: 260,
     image: [p_img39],
     category: "Paints",
@@ -642,7 +643,7 @@ export const products = [
     _id: "aaabn",
     name: "Paint",
     description:
-      "Paint.",
+      "A painting depicting a woman in an elegant dress, absorbed in a quiet moment in an interior setting, with warm tones emphasizing the calm and reflective atmosphere.",
     price: 290,
     image: [p_img40],
     category: "Paints",
@@ -655,7 +656,7 @@ export const products = [
     _id: "aaabo",
     name: "Paint",
     description:
-      "Paint.",
+      "A detailed painting of a quaint, sunlit house, covered in flowers and greenery, evoking a peaceful and rustic feeling, possibly located in the countryside.",
     price: 270,
     image: [p_img41],
     category: "Paints",
@@ -681,7 +682,7 @@ export const products = [
     _id: "aaabq",
     name: "Photography",
     description:
-      "Photography.",
+      "A still-life photograph featuring a bouquet of daffodils placed in a vintage vase, accompanied by a candle and other decorative elements, giving off a classic and cozy ambiance.",
     price: 280,
     image: [p_img43],
     category: "Photography",
@@ -694,7 +695,7 @@ export const products = [
     _id: "aaabr",
     name: "Statue",
     description:
-      "Statue.",
+      "A classical statue of a figure mounted on a pedestal, with inscriptions or scrolls, reminiscent of traditional sculptures that celebrate knowledge or art.",
     price: 310,
     image: [p_img44],
     category: "Statues",
@@ -707,7 +708,7 @@ export const products = [
     _id: "aaabs",
     name: "Paint",
     description:
-      "Paint.",
+      "A romantic painting of two women, one assisting the other in getting dressed, likely preparing for a special occasion, with soft lighting and graceful poses that emphasize beauty and intimacy.",
     price: 290,
     image: [p_img45],
     category: "Paints",
@@ -720,7 +721,7 @@ export const products = [
     _id: "aaabt",
     name: "Paint",
     description:
-      "Paint.",
+      " A detailed painting of a woman in an elegant dress, lying down with a serene expression, holding a single flower. The artwork captures the softness and calm of the scene, focusing on textures and soft lighting.",
     price: 320,
     image: [p_img46],
     category: "Paints",
@@ -733,7 +734,7 @@ export const products = [
     _id: "aaabu",
     name: "Photography",
     description:
-      "Photography.",
+      "A serene landscape photograph featuring a peaceful body of water surrounded by lush greenery, reflecting the stillness of nature. The background showcases mountains and clouds, evoking tranquility.",
     price: 300,
     image: [p_img47],
     category: "Photography",
@@ -746,7 +747,7 @@ export const products = [
     _id: "aaabv",
     name: "Paint",
     description:
-      "Paint.",
+      "A vibrant painting of a woman in a rustic outfit tending to her horse, set against a backdrop of a rural landscape. The warm tones and detailed brushwork highlight the connection between the woman and the animal.",
     price: 330,
     image: [p_img48],
     category: "Paints",
@@ -758,7 +759,7 @@ export const products = [
   {
     _id: "aaabw", name: "Photography",
     description:
-      "Photography.",
+      "A photograph of a majestic architectural structure, resembling the intricate design of the Taj Mahal. The warm lighting and shadows bring out the detailed carvings and grandeur of the building.",
     price: 310,
     image: [p_img49],
     category: "Photography",
@@ -771,7 +772,7 @@ export const products = [
     _id: "aaabx",
     name: "Photography",
     description:
-      "Photography.",
+      " An abstract photograph with a strong geometric theme, featuring diagonal lines and contrasting shadows. A solitary figure stands against the vast, minimalist background, adding a sense of scale and depth.",
     price: 340,
     image: [p_img50],
     category: "Photography",
@@ -784,7 +785,7 @@ export const products = [
     _id: "aaaby",
     name: "Statue",
     description:
-      "Statue.",
+      "A sculpture of a woman in a classical pose, dressed in flowing robes and holding a small object. The statue has fine detailing, and the figure’s stance exudes grace and poise.",
     price: 320,
     image: [p_img51],
     category: "Statues",
@@ -797,7 +798,7 @@ export const products = [
     _id: "aaabz",
     name: "Paint",
     description:
-      "Paint.",
+      "A still-life painting of a vase filled with pink and orange flowers, arranged delicately in a soft, natural style. The muted tones of the background emphasize the vibrant colors of the bouquet.",
     price: 350,
     image: [p_img52],
     category: "Paints",
@@ -810,7 +811,7 @@ export const products = [
     _id: "aaaca",
     name: "Statue",
     description:
-      "Statue.",
+      "A dramatic black-and-white painting of a figure standing in a spotlight, with minimal background details. The play of light and shadow gives the piece a striking, emotional depth, focusing on form and mood.",
     price: 350,
     image: [p_img53],
     category: "Statues",
@@ -823,7 +824,7 @@ export const products = [
     _id: "aaacb",
     name: "Statue",
     description:
-      "Paint.",
+      "A tall, abstract statue resembling a human figure in a flowing drape. The design gives the impression of cloth in motion, with soft curves.",
     price: 350,
     image: [p_img54],
     category: "Statues",
@@ -836,7 +837,7 @@ export const products = [
     _id: "aaacc",
     name: "Statue",
     description:
-      "Paint.",
+      "A stylized human torso with an abstract, fragmented design. The smooth surface is interrupted by jagged edges, creating an artistic, unfinished look.",
     price: 350,
     image: [p_img55],
     category: "Statues",
@@ -849,7 +850,7 @@ export const products = [
     _id: "aaacd",
     name: "Statue",
     description:
-      "Paint.",
+      "This depicts a figure wrapped in dynamic, flowing drapery, similar to classical sculptures of gods or mythological figures. The details emphasize motion, as if the wind is blowing through the fabric.",
     price: 350,
     image: [p_img56],
     category: "Statues",
@@ -862,7 +863,7 @@ export const products = [
     _id: "aaace",
     name: "Statue",
     description:
-      "Paint.",
+      "A slender, abstract human figure with elongated limbs, captured in a graceful, dance-like posture. The design is modern and minimalistic, evoking a sense of movement and elegance.",
     price: 350,
     image: [p_img57],
     category: "Statues",
@@ -875,7 +876,7 @@ export const products = [
     _id: "aaacf",
     name: "Statue",
     description:
-      "Paint.",
+      " A heart-shaped statue adorned with delicate floral elements, seemingly inspired by nature. The flowers appear to bloom from the heart, symbolizing growth or emotion.",
     price: 350,
     image: [p_img58],
     category: "Statues",
@@ -888,7 +889,7 @@ export const products = [
     _id: "aaacg",
     name: "Statue",
     description:
-      "Paint.",
+      "A classic bust, possibly inspired by Greek or Roman figures. It showcases detailed features, curly hair, and a thoughtful expression, representing a person of historical or artistic significance.",
     price: 350,
     image: [p_img59],
     category: "Statues",
@@ -901,7 +902,7 @@ export const products = [
     _id: "aaach",
     name: "Statue",
     description:
-      "Paint.",
+      "Another abstract figure, with a shape that seems to explore motion and fluidity. The design might evoke a dancer or a performer, with a focus on dynamic poses.",
     price: 350,
     image: [p_img60],
     category: "Statues",
@@ -914,7 +915,7 @@ export const products = [
     _id: "aaaci",
     name: "Statue",
     description:
-      "Paint.",
+      "A small, classic bust sculpture, featuring a young person with curly hair. The face is detailed, with lifelike expressions, reminiscent of Renaissance or Baroque sculptures.",
     price: 350,
     image: [p_img61],
     category: "Statues",
@@ -927,7 +928,7 @@ export const products = [
     _id: "aaacj",
     name: "Statue",
     description:
-      "Paint.",
+      "A dark-toned, abstract sculpture placed against a wooden backdrop. The figure is minimalistic, possibly representing a head or face in a fragmented style.",
     price: 350,
     image: [p_img62],
     category: "Statues",
@@ -940,7 +941,7 @@ export const products = [
     _id: "aaack",
     name: "Statue",
     description:
-      "Paint.",
+      "A white geometric bust of a deer or stag with large antlers. The angular, faceted design gives the piece a modern, digital or polygonal aesthetic.",
     price: 350,
     image: [p_img63],
     category: "Statues",
@@ -953,7 +954,7 @@ export const products = [
     _id: "aaacl",
     name: "Paint",
     description:
-      "Paint.",
+      "A classical-style painting depicting a dark, possibly Baroque still life. It features intricate detailing of flowers and possibly fruits in a dimly lit setting, evoking a sense of depth and drama.",
     price: 350,
     image: [p_img64],
     category: "Paints",
@@ -966,7 +967,7 @@ export const products = [
     _id: "aaacm",
     name: "Paint",
     description:
-      "Paint.",
+      "A serene landscape painting of a coastal scene, showcasing the ocean with gentle waves and a peaceful sky, bathed in warm colors from either sunrise or sunset.",
     price: 350,
     image: [p_img65],
     category: "Paints",
@@ -979,7 +980,7 @@ export const products = [
     _id: "aaacn",
     name: "Paint",
     description:
-      "Paint.",
+      "An artwork depicting a solitary candle burning in the darkness, with soft light illuminating the surrounding area. The focus on the candle creates a calm, meditative atmosphere.",
     price: 350,
     image: [p_img66],
     category: "Paints",
@@ -1005,7 +1006,7 @@ export const products = [
     _id: "aaaco",
     name: "Paint",
     description:
-      "Paint.",
+      "A still-life painting featuring a colorful bouquet of flowers in a traditional, ornate golden frame. The rich details and vibrant hues of the flowers give the painting a classic and timeless feel.",
     price: 350,
     image: [p_img68],
     category: "Paints",
@@ -1017,7 +1018,7 @@ export const products = [
     _id: "aaacp",
     name: "Paint",
     description:
-      "Paint.",
+      " A minimalist photography piece capturing a serene desert landscape with rolling sand dunes under a clear sky. The warm tones of the sand contrast with the simplicity of the setting.",
     price: 350,
     image: [p_img69],
     category: "Paints",
@@ -1030,7 +1031,7 @@ export const products = [
     _id: "aaacq",
     name: "Photography",
     description:
-      "Paint.",
+      "This artwork seems to showcase a lighthouse in the distance by the ocean, set against the backdrop of a calm sunset or sunrise. The golden lighting and soft waves evoke a peaceful maritime scene.",
     price: 350,
     image: [p_img70],
     category: "Photography",
@@ -1043,7 +1044,7 @@ export const products = [
     _id: "aaacr",
     name: "Photography",
     description:
-      "Paint.",
+      "A desert scene showing a single camel walking across a vast, open landscape with a lone palm tree in the distance. The minimalism and soft golden tones of the sand create a serene and tranquil atmosphere.",
     price: 350,
     image: [p_img71],
     category: "Photography",
@@ -1056,7 +1057,7 @@ export const products = [
     _id: "aaacs",
     name: "Photography",
     description:
-      "Paint.",
+      "A striking image of a long corridor or passage, where tall columns cast repetitive shadows. The photograph uses light and shadow to create depth and symmetry, possibly in a modern architectural setting.",
     price: 350,
     image: [p_img72],
     category: "Photography",
@@ -1069,7 +1070,7 @@ export const products = [
     _id: "aaact",
     name: "Photography",
     description:
-      "Paint.",
+      "A photograph of an archway that frames a historic building, possibly a monument. The arch provides a window-like view into the structure beyond, with warm lighting illuminating the stonework.",
     price: 350,
     image: [p_img73],
     category: "Photography",
@@ -1082,7 +1083,7 @@ export const products = [
     _id: "aaacu",
     name: "Photography",
     description:
-      "Paint.",
+      "A bright, blue-sky photograph showing a clean white archway overlooking a vast, calm sea. The arch and the ocean combine to create a peaceful and open vista, reminiscent of Mediterranean or coastal architecture.",
     price: 350,
     image: [p_img74],
     category: "Photography",
@@ -1095,7 +1096,7 @@ export const products = [
     _id: "aaacv",
     name: "Photography",
     description:
-      "Paint.",
+      "A detailed shot of a decorative stained-glass window with intricate floral patterns and golden designs. The artwork shows careful craftsmanship and evokes a vintage or historical feel.",
     price: 350,
     image: [p_img75],
     category: "Photography",
@@ -1108,7 +1109,7 @@ export const products = [
     _id: "aaacw",
     name: "Photography",
     description:
-      "Paint.",
+      "A photograph of a simple, closed door in a rustic wall. The blue wooden door is framed by a neutral stone exterior, giving it a minimalist and aesthetically pleasing look.",
     price: 350,
     image: [p_img76],
     category: "Photography",
@@ -1121,7 +1122,7 @@ export const products = [
     _id: "aaacx",
     name: "The Flower",
     description:
-      "Painting Of Some Flowers.",
+      " A painting showing a stylized black horse with a simple, abstract figure standing beside it. The color palette includes muted greens and browns, and the overall effect is modern and minimalistic.",
     price: 450,
     image: [p_img77],
     category: "Paints",
@@ -1133,7 +1134,7 @@ export const products = [
     _id: "aaacy",
     name: "The Flower",
     description:
-      "Painting Of Some Flowers.",
+      " Another abstract piece, possibly depicting flowing fabric or organic forms in neutral tones. The soft curves and muted color scheme give this piece a calming, almost surreal quality.",
     price: 450,
     image: [p_img78],
     category: "Paints",
@@ -1145,7 +1146,7 @@ export const products = [
     _id: "aaacz",
     name: "The Flower",
     description:
-      "Painting Of Some Flowers.",
+      "The artwork on the left features an abstract design with flowing, wave-like shapes in shades of teal, green, and white. The texture appears smooth, resembling a fluid, almost water-like pattern. It is displayed in a minimalistic interior setting with neutral-colored décor and a plant nearby, emphasizing a modern, serene atmosphere.",
     price: 450,
     image: [p_img79],
     category: "Paints",
@@ -1157,7 +1158,7 @@ export const products = [
     _id: "aabaa",
     name: "The Flower",
     description:
-      "Painting Of Some Flowers.",
+      "The artwork on the right portrays a landscape scene of a mountainous area, with layered green hills in the foreground and snowy peaks in the background. A river runs through the center, adding depth and contrast to the piece. The style suggests a combination of realism and textured art, focusing on natural elements.",
     price: 450,
     image: [p_img80],
     category: "Paints",
