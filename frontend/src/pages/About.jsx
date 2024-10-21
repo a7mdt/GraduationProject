@@ -17,7 +17,7 @@ const About = () => {
           alt=""
         />
         <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
-          <p>about text slkjdfsfklsjfldksfjsflsjflsfjfjsfjfdslfk</p>
+          <p>about text slkjdfsfklsjfldksfjsflsjflsfjfjsfjfdslfkkkk</p>
           <p>another about text fdgkdfjdlkjlkfjskfjsfklsjflsknsdkfjskfjsf</p>
           <b className="text-gray-800">Our Mission</b>
           <p>dummy text jsdfoisjdofijdsiofjsfjsif</p>
