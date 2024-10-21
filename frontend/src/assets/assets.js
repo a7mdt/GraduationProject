@@ -126,9 +126,11 @@ export const assets = {
   stripe_logo,
   cross_icon,
   ForHome,
+
   admin_img,
   about,
   repair,
+
 };
 export const products = [
   {
@@ -972,7 +974,7 @@ export const products = [
     size: "500*400cm",
     date: 1716668445448,
 
-  }, 
+  },
   {
     _id: "aaacn",
     name: "Paint",
@@ -985,7 +987,7 @@ export const products = [
     size: "500*400cm",
     date: 1716668445448,
 
-  }, 
+  },
   // {
   //   _id: "aaabz",
   //   name: "Paint",
@@ -999,7 +1001,7 @@ export const products = [
   //   date: 1716668445448,
 
   // },
-   {
+  {
     _id: "aaaco",
     name: "Paint",
     description:
@@ -1024,7 +1026,7 @@ export const products = [
     date: 1716668445448,
 
   },
-   {
+  {
     _id: "aaacq",
     name: "Photography",
     description:
@@ -1037,7 +1039,7 @@ export const products = [
     date: 1716668445448,
 
   },
-   {
+  {
     _id: "aaacr",
     name: "Photography",
     description:
@@ -1050,7 +1052,7 @@ export const products = [
     date: 1716668445448,
 
   },
-   {
+  {
     _id: "aaacs",
     name: "Photography",
     description:
@@ -1063,7 +1065,7 @@ export const products = [
     date: 1716668445448,
 
   },
-   {
+  {
     _id: "aaact",
     name: "Photography",
     description:
@@ -1076,7 +1078,7 @@ export const products = [
     date: 1716668445448,
 
   },
-   {
+  {
     _id: "aaacu",
     name: "Photography",
     description:
@@ -1089,7 +1091,7 @@ export const products = [
     date: 1716668445448,
 
   },
-   {
+  {
     _id: "aaacv",
     name: "Photography",
     description:
@@ -1102,7 +1104,7 @@ export const products = [
     date: 1716668445448,
 
   },
-   {
+  {
     _id: "aaacw",
     name: "Photography",
     description:
@@ -1127,7 +1129,7 @@ export const products = [
     size: "470*250cm",
     date: 1716621345448,
 
-  },{
+  }, {
     _id: "aaacy",
     name: "The Flower",
     description:
@@ -1139,7 +1141,7 @@ export const products = [
     size: "470*250cm",
     date: 1716621345448,
 
-  },{
+  }, {
     _id: "aaacz",
     name: "The Flower",
     description:
@@ -1151,7 +1153,7 @@ export const products = [
     size: "470*250cm",
     date: 1716621345448,
 
-  },{
+  }, {
     _id: "aabaa",
     name: "The Flower",
     description:
