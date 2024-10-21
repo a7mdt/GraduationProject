@@ -24,24 +24,4 @@ const ProductItem = ({ id, image, name, price }) => {
   );
 };
 
-<<<<<<< HEAD
-const ProductItem = ({id,image,name,price}) => {
-
-    const {currency}=useContext(ShopContext);
-     
-    return (
-        <Link className="text-gray-700 cursor-pointer px-2" to={`/product/${id}`}>
-            <div className="overflow-hidden">
-              <img src={image[0]} className="hover:scale-110 transition ease-in-out" alt="" />  
-            </div>
-            <p className="pt-3 pb-1 text-sm">{name}</p>
-            <p className="text-sm font-medium">{currency}{price}</p>
-        </Link>
-    )
-}
-
-export default ProductItem
-
-=======
 export default ProductItem;
->>>>>>> 47e2a115847d0f3537fe498bd122002fa49f4925

@@ -182,7 +182,7 @@ const Collection = () => {
           >
             <option value="relavent">Sort by: Relavent</option>
             <option value="low-high">Sort by: Low to High</option>
-            <option value="high-low">Sort by: High ti Low</option>
+            <option value="high-low">Sort by: High to Low</option>
           </select>
         </div>
         {/* Map Products */}
