@@ -135,7 +135,7 @@ export const products = [
     _id: "aaaaa",
     name: "Statues of a women",
     description:
-      "A Women seeking freedom.",
+      "A dynamic, flowing sculpture of a woman, possibly in motion or dance, with an abstract design that highlights elegance and fluidity.",
     price: 800,
     image: [p_img1],
     category: "Statues",
@@ -148,7 +148,7 @@ export const products = [
     _id: "aaaab",
     name: "A Women Reading",
     description:
-      "A Women enjoying herself.",
+      "A painting or sculpture of a woman sitting in a serene environment, engrossed in reading a book, wearing a long, detailed dress.",
     price: 480,
     image: [p_img2],
     category: "Paints",
@@ -161,7 +161,7 @@ export const products = [
     _id: "aaaac",
     name: "Photo of The Nile",
     description:
-      "A Beautiful Scene Of The Nile.",
+      "A picturesque view of the Nile River at sunset, framed by an arched window, showcasing tranquil water and silhouettes of trees and a boat.",
     price: 250,
     image: [p_img3],
     category: "Photography",
@@ -174,7 +174,7 @@ export const products = [
     _id: "aaaad",
     name: "The Flower",
     description:
-      "Painting Of Some Flowers.",
+      "A minimalistic, abstract painting featuring large floral patterns in neutral and dark tones.",
     price: 450,
     image: [p_img4],
     category: "Paints",
@@ -187,7 +187,7 @@ export const products = [
     _id: "aaaae",
     name: "Mysterious Lady",
     description:
-      "The Iconic Lady.",
+      "An abstract sculpture of a woman with a curvaceous figure wearing a wide-brimmed hat, possibly conveying a sense of mystery and elegance.",
     price: 890,
     image: [p_img5],
     category: "Statues",
@@ -200,7 +200,7 @@ export const products = [
     _id: "aaaaf",
     name: "The Pyramids",
     description:
-      "Photo Of Our History.",
+      "A scenic view of the pyramids, framed by an arch, with warm colors reflecting the desert landscape.",
     price: 200,
     image: [p_img6],
     category: "Photography",
@@ -213,7 +213,7 @@ export const products = [
     _id: "aaaag",
     name: "Wood Carving",
     description:
-      "Wall Decpration.",
+      "A 3D abstract wall art piece that appears to be crafted from wood, featuring flowing, organic shapes resembling folded fabric or natural elements.",
     price: 590,
     image: [p_img7],
     category: "Paints",
@@ -226,7 +226,7 @@ export const products = [
     _id: "aaaah",
     name: "Creative Painting",
     description:
-      "Wall Decpration.",
+      "A large contemporary painting with a mix of neutral tones and abstract textures, possibly conveying a blend of nature and urban influences.",
     price: 540,
     image: [p_img8],
     category: "Paints",
