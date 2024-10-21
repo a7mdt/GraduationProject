@@ -627,7 +627,7 @@ export const products = [
     _id: "aaabm",
     name: "Paint",
     description:
-      "", // no description
+      "old wooden staircase with ivy growing around it. Warm lighting and a stained glass window create a cozy, rustic atmosphere.", 
     price: 260,
     image: [p_img39],
     category: "Paints",
@@ -925,7 +925,7 @@ export const products = [
     _id: "aaacj",
     name: "Statue",
     description:
-      "Paint.",
+      "A dark-toned, abstract sculpture placed against a wooden backdrop. The figure is minimalistic, possibly representing a head or face in a fragmented style.",
     price: 350,
     image: [p_img62],
     category: "Statues",
@@ -938,7 +938,7 @@ export const products = [
     _id: "aaack",
     name: "Statue",
     description:
-      "Paint.",
+      "A white geometric bust of a deer or stag with large antlers. The angular, faceted design gives the piece a modern, digital or polygonal aesthetic.",
     price: 350,
     image: [p_img63],
     category: "Statues",
@@ -951,7 +951,7 @@ export const products = [
     _id: "aaacl",
     name: "Paint",
     description:
-      "Paint.",
+      "A classical-style painting depicting a dark, possibly Baroque still life. It features intricate detailing of flowers and possibly fruits in a dimly lit setting, evoking a sense of depth and drama.",
     price: 350,
     image: [p_img64],
     category: "Paints",
@@ -964,7 +964,7 @@ export const products = [
     _id: "aaacm",
     name: "Paint",
     description:
-      "Paint.",
+      "A serene landscape painting of a coastal scene, showcasing the ocean with gentle waves and a peaceful sky, bathed in warm colors from either sunrise or sunset.",
     price: 350,
     image: [p_img65],
     category: "Paints",
@@ -977,7 +977,7 @@ export const products = [
     _id: "aaacn",
     name: "Paint",
     description:
-      "Paint.",
+      "An artwork depicting a solitary candle burning in the darkness, with soft light illuminating the surrounding area. The focus on the candle creates a calm, meditative atmosphere.",
     price: 350,
     image: [p_img66],
     category: "Paints",
@@ -1003,7 +1003,7 @@ export const products = [
     _id: "aaaco",
     name: "Paint",
     description:
-      "Paint.",
+      "A still-life painting featuring a colorful bouquet of flowers in a traditional, ornate golden frame. The rich details and vibrant hues of the flowers give the painting a classic and timeless feel.",
     price: 350,
     image: [p_img68],
     category: "Paints",
@@ -1015,7 +1015,7 @@ export const products = [
     _id: "aaacp",
     name: "Paint",
     description:
-      "Paint.",
+      " A minimalist photography piece capturing a serene desert landscape with rolling sand dunes under a clear sky. The warm tones of the sand contrast with the simplicity of the setting.",
     price: 350,
     image: [p_img69],
     category: "Paints",
@@ -1028,7 +1028,7 @@ export const products = [
     _id: "aaacq",
     name: "Photography",
     description:
-      "Paint.",
+      "This artwork seems to showcase a lighthouse in the distance by the ocean, set against the backdrop of a calm sunset or sunrise. The golden lighting and soft waves evoke a peaceful maritime scene.",
     price: 350,
     image: [p_img70],
     category: "Photography",
@@ -1041,7 +1041,7 @@ export const products = [
     _id: "aaacr",
     name: "Photography",
     description:
-      "Paint.",
+      "A desert scene showing a single camel walking across a vast, open landscape with a lone palm tree in the distance. The minimalism and soft golden tones of the sand create a serene and tranquil atmosphere.",
     price: 350,
     image: [p_img71],
     category: "Photography",
@@ -1054,7 +1054,7 @@ export const products = [
     _id: "aaacs",
     name: "Photography",
     description:
-      "Paint.",
+      "A striking image of a long corridor or passage, where tall columns cast repetitive shadows. The photograph uses light and shadow to create depth and symmetry, possibly in a modern architectural setting.",
     price: 350,
     image: [p_img72],
     category: "Photography",
@@ -1067,7 +1067,7 @@ export const products = [
     _id: "aaact",
     name: "Photography",
     description:
-      "Paint.",
+      "A photograph of an archway that frames a historic building, possibly a monument. The arch provides a window-like view into the structure beyond, with warm lighting illuminating the stonework.",
     price: 350,
     image: [p_img73],
     category: "Photography",
@@ -1080,7 +1080,7 @@ export const products = [
     _id: "aaacu",
     name: "Photography",
     description:
-      "Paint.",
+      "A bright, blue-sky photograph showing a clean white archway overlooking a vast, calm sea. The arch and the ocean combine to create a peaceful and open vista, reminiscent of Mediterranean or coastal architecture.",
     price: 350,
     image: [p_img74],
     category: "Photography",
@@ -1093,7 +1093,7 @@ export const products = [
     _id: "aaacv",
     name: "Photography",
     description:
-      "Paint.",
+      "A detailed shot of a decorative stained-glass window with intricate floral patterns and golden designs. The artwork shows careful craftsmanship and evokes a vintage or historical feel.",
     price: 350,
     image: [p_img75],
     category: "Photography",
@@ -1106,7 +1106,7 @@ export const products = [
     _id: "aaacw",
     name: "Photography",
     description:
-      "Paint.",
+      "A photograph of a simple, closed door in a rustic wall. The blue wooden door is framed by a neutral stone exterior, giving it a minimalist and aesthetically pleasing look.",
     price: 350,
     image: [p_img76],
     category: "Photography",
@@ -1119,7 +1119,7 @@ export const products = [
     _id: "aaacx",
     name: "The Flower",
     description:
-      "Painting Of Some Flowers.",
+      " A painting showing a stylized black horse with a simple, abstract figure standing beside it. The color palette includes muted greens and browns, and the overall effect is modern and minimalistic.",
     price: 450,
     image: [p_img77],
     category: "Paints",
@@ -1131,7 +1131,7 @@ export const products = [
     _id: "aaacy",
     name: "The Flower",
     description:
-      "Painting Of Some Flowers.",
+      " Another abstract piece, possibly depicting flowing fabric or organic forms in neutral tones. The soft curves and muted color scheme give this piece a calming, almost surreal quality.",
     price: 450,
     image: [p_img78],
     category: "Paints",
@@ -1143,7 +1143,7 @@ export const products = [
     _id: "aaacz",
     name: "The Flower",
     description:
-      "Painting Of Some Flowers.",
+      "The artwork on the left features an abstract design with flowing, wave-like shapes in shades of teal, green, and white. The texture appears smooth, resembling a fluid, almost water-like pattern. It is displayed in a minimalistic interior setting with neutral-colored décor and a plant nearby, emphasizing a modern, serene atmosphere.",
     price: 450,
     image: [p_img79],
     category: "Paints",
@@ -1155,7 +1155,7 @@ export const products = [
     _id: "aabaa",
     name: "The Flower",
     description:
-      "Painting Of Some Flowers.",
+      "The artwork on the right portrays a landscape scene of a mountainous area, with layered green hills in the foreground and snowy peaks in the background. A river runs through the center, adding depth and contrast to the piece. The style suggests a combination of realism and textured art, focusing on natural elements.",
     price: 450,
     image: [p_img80],
     category: "Paints",
