@@ -126,12 +126,11 @@ export const assets = {
   stripe_logo,
   cross_icon,
   ForHome,
-<<<<<<< HEAD
-  admin_img
-=======
+
+  admin_img,
   about,
   repair,
->>>>>>> 57d7f839057e0eadaab5e5e0b940f2d5e44b4730
+
 };
 export const products = [
   {
