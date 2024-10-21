@@ -100,6 +100,7 @@ import contact_img from "./contact_img.png";
 import razorpay_logo from "./razorpay_logo.png";
 import stripe_logo from "./stripe_logo.png";
 import cross_icon from "./cross_icon.png";
+import admin_img from "./admin_img.png"
 import ForHome from './ForHome.png'
 
 export const assets = {
@@ -122,6 +123,7 @@ export const assets = {
   stripe_logo,
   cross_icon,
   ForHome,
+  admin_img
 };
 export const products = [
   {
