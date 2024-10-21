@@ -166,11 +166,20 @@ const Navbar = () => {
   };
 
   // Redirect to user or admin login page
+  // const handleUserAdminSelect = (type) => {
+  //   if (type === "user") {
+  //     navigate("login"); // Redirect to user login page
+  //   } else if (type === "admin") {
+  //     navigate("/admin-login"); // Redirect to admin login page
+  //   }
+  // };
+
   const handleUserAdminSelect = (type) => {
     if (type === "user") {
       navigate("login"); // Redirect to user login page
     } else if (type === "admin") {
-      navigate("/admin-login"); // Redirect to admin login page
+      const redirectUrl = "http://localhost:5174/";//this link 
+      window.location.href = redirectUrl; // Redirect to external admin page
     }
   };
 
