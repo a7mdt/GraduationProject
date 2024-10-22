@@ -62,7 +62,7 @@ const Product = () => {
           <p className='mt-5 text-3xl font-medium'>{currency}{productData.price}</p>
           <p className='mt-5 text-gray-500 md:w-4/5'> {productData.description} </p>
           <div className='flex flex-col gap-4 my-8'>
-            <p>Size</p> 
+            {/* <p>Size</p>  */}
           <p className='mt-5 text-gray-500 md:w-4/5'> {productData.size} </p>
 
           </div>
@@ -73,7 +73,7 @@ const Product = () => {
           <div className='text-sm text-gray-500 mt-5 flex flex-col gap-1'>
             <p>100% Original product</p>
             <p>Cash on delivery is available on this product</p>
-            <p>Easy return and exchange policy within 7 days</p>
+            <p>Free repair for any piece </p>
           </div>
         </div>
       </div>

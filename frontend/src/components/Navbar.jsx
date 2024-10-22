@@ -226,10 +226,8 @@ const Navbar = () => {
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
           >
-            <p
-              className="text-black font-semibold cursor-pointer flex items-center"
-            >
-              Hello, {username}
+            <p className="text-black font-semibold cursor-pointer flex items-center">
+              Hello {username}
             </p>
             {showDropdown && (
               <div
@@ -263,17 +261,17 @@ const Navbar = () => {
             />
             {showUserAdminDropdown && (
               <div
-                className="absolute right-0 mt-2 w-48 bg-white shadow-md z-10 rounded-lg overflow-hidden"
+                className="absolute right-0 w-40 bg-white z-10  overflow-hidden pt-4"
               >
                 <button
                   onClick={() => handleUserAdminSelect("user")}
-                  className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200 "
+                  className="block w-full text-left px-4 py-2 text-black bg-gray-100 hover:bg-gray-200 "
                 >
                   User
                 </button>
                 <button
                   onClick={() => handleUserAdminSelect("admin")}
-                  className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200"
+                  className="block w-full text-left px-4 py-2 text-black bg-gray-100 hover:bg-gray-200"
                 >
                   Admin
                 </button>
@@ -296,9 +294,8 @@ const Navbar = () => {
       </div>
       {/* sidebar menu for small screens */}
       <div
-        className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${
-          visible ? "w-full" : "w-0"
-        } `}
+        className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? "w-full" : "w-0"
+          } `}
       >
         <div className="flex flex-col text-gray-600">
           <div
