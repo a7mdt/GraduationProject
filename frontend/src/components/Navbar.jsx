@@ -232,7 +232,7 @@ const Navbar = () => {
             {showDropdown && (
               <div
                 id="dropdown-menu"
-                className="absolute right-0 mt-2 w-48 bg-white shadow-md z-10 rounded-lg overflow-hidden"
+                className="absolute right-0 w-40 bg-white z-10  overflow-hidden pt-4 overflow-hidden"
               >
                 <Link to="/Orders">
                   <button className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200">
