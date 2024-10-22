@@ -72,7 +72,7 @@ const Users = () => {
 
                 <td className="border px-4 py-2 text-center flex items-center justify-end md:table-cell">
                   <button
-                    className="text-red-600 font-semibold ml-2"
+                    className="text-red-600 font-semibold ml-2 hover:text-red-700 transition-colors duration-500"
                     onClick={() => handleDelete(index)}
                   >
                     Delete

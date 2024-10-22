@@ -24,7 +24,7 @@ const Navbar = () => {
     <div className="flex items-center py-2 px-[4%] justify-between">
       <img className="w-[max(10%,80px)]" src={assets.adminLogo} alt="" />
       <button
-        className="bg-gray-600 text-white px-5 py-2 sm:px-7 sm:py-2 rounded-full text-xs sm:text-sm"
+        className="bg-gray-600 text-white px-5 py-2 sm:px-7 sm:py-2 rounded-full text-xs sm:text-sm hover:bg-gray-500 transition-colors duration-500"
         onClick={handleLogout}
       >
         Logout

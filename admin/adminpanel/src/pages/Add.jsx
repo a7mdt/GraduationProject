@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 
 const Add = () => {
   const [image1, setImg1] = useState(false);
@@ -25,20 +25,18 @@ const Add = () => {
       subCategory,
       width,
       height,
-      images: [
-        image1 ? URL.createObjectURL(image1) : null,
-      ],
+      images: [image1 ? URL.createObjectURL(image1) : null],
     };
-  
+
     console.log(product);
 
     await Swal.fire({
-      title: 'Success!',
-      text: 'Item added successfully.',
-      icon: 'success',
-      confirmButtonText: 'OK',
+      title: "Success!",
+      text: "Item added successfully.",
+      icon: "success",
+      confirmButtonText: "OK",
     });
-  
+
     setName("");
     setDescription("");
     setPrice("");
@@ -47,10 +45,13 @@ const Add = () => {
     setWidth("");
     setHeight("");
     setImg1(false);
-  }
+  };
 
   return (
-    <form onSubmit={onSumbitHandler} className="flex flex-col w-full items-start gap-3">
+    <form
+      onSubmit={onSumbitHandler}
+      className="flex flex-col w-full items-start gap-3"
+    >
       <div>
         <p className="mb-2">Upload Image</p>
         <div className="flex gap-2">
@@ -85,26 +86,25 @@ const Add = () => {
       <div>
         <p className="mb-2">Product Size</p>
         <div className="flex items-center space-x-2">
-        <input
-          onChange={(e) => setWidth(e.target.value)}
-          value={width}
-          className="w-full max-w-[220px] px-3 py-2"
-          type="text"
-          placeholder="Width"
-          required
-        />
-        <span className="text-sm font-bold">X</span>
-        <input
-          onChange={(e) => setHeight(e.target.value)}
-          value={height}
-          className="w-full max-w-[220px] px-3 py-2"
-          type="text"
-          placeholder="Height"
-          required
-        />
-        <span className="text-sm font-bold">CM</span>
+          <input
+            onChange={(e) => setWidth(e.target.value)}
+            value={width}
+            className="w-full max-w-[220px] px-3 py-2"
+            type="text"
+            placeholder="Width"
+            required
+          />
+          <span className="text-sm font-bold">X</span>
+          <input
+            onChange={(e) => setHeight(e.target.value)}
+            value={height}
+            className="w-full max-w-[220px] px-3 py-2"
+            type="text"
+            placeholder="Height"
+            required
+          />
+          <span className="text-sm font-bold">CM</span>
         </div>
-        
       </div>
 
       <div className="w-full">
@@ -157,7 +157,10 @@ const Add = () => {
         </div>
       </div>
 
-      <button type="sumbit" className="w-28 py-3 mt-4 bg-black text-white">
+      <button
+        type="sumbit"
+        className="w-28 py-3 mt-4 bg-black text-white hover:bg-gray-800 transition-colors duration-500"
+      >
         ADD
       </button>
     </form>
