@@ -17,9 +17,10 @@ const Contact = () => {
           alt=""
         />
         <div className="flex flex-col justify-center items-start gap-6">
-          <p className="font-semibold text-gray-600">Our Gallery</p>
-          <p className="text-gray-500">Address: 22 Old Street </p>
-          <p className="text-gray-500">Tel: +2-01012345689</p>
+          <p className="font-semibold text-gray-600">Get in Touch</p>
+          <p className="text-gray-500">Email: diagonalley@gmail.com </p>
+          <p className="text-gray-500">Phone: +2-01012345689</p>
+          <p className="text-gray-500">Tel:  047-13246759</p>
           <p className="font-semibold text-gray-600">We're Here to Help</p>
           <p className="text-gray-500">
           We’d love to hear from you! Whether you have questions about our exhibitions, are interested in purchasing artwork, or want to collaborate, feel free to reach out. Our team is here to assist you with any inquiries.
