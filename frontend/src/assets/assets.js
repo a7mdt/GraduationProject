@@ -105,6 +105,12 @@ import admin_img from "./admin_img.png"
 import ForHome from './ForHome.png'
 import about from './about.png'
 import repair from "./repair.png";
+import mail from "./mail.png";
+import phone from "./phone.png"
+import mobile from "./mobile.png"
+import facebook from "./facebook.png"
+import instagram from "./instagram.png"
+import linkedin from "./linkedin.png"
 
 export const assets = {
   logo,
@@ -127,10 +133,15 @@ export const assets = {
   cross_icon,
   ForHome,
   admin_img,
-
-  admin_img,
   about,
   repair,
+  mail,
+  phone,
+  mobile,
+  facebook,
+  instagram,
+  linkedin,
+
 
 };
 export const products = [
@@ -427,7 +438,7 @@ export const products = [
     price: 180,
     image: [p_img23],
     category: "Photography",
-    ClassicsubCategory: "Classic",
+    subCategory: "Classic",
     size: "500*400cm",
     date: 1716636545448,
 
@@ -630,7 +641,7 @@ export const products = [
     _id: "aaabm",
     name: "Pace",
     description:
-      "old wooden staircase with ivy growing around it. Warm lighting and a stained glass window create a cozy, rustic atmosphere.", 
+      "old wooden staircase with ivy growing around it. Warm lighting and a stained glass window create a cozy, rustic atmosphere.",
     price: 260,
     image: [p_img39],
     category: "Paints",
