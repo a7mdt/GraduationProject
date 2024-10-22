@@ -17,15 +17,15 @@ const Contact = () => {
           alt=""
         />
         <div className="flex flex-col justify-center items-start gap-6">
-          <p className="font-semibold text-gray-600">Our Store</p>
-          <p className="text-gray-500">dummy address</p>
-          <p className="text-gray-500">Tel: dummy phone num</p>
-          <p className="font-semibold text-gray-600">Careers at Forever</p>
+          <p className="font-semibold text-gray-600">Our Gallery</p>
+          <p className="text-gray-500">Address: 22 Old Street </p>
+          <p className="text-gray-500">Tel: +2-01012345689</p>
+          <p className="font-semibold text-gray-600">We're Here to Help</p>
           <p className="text-gray-500">
-            learn more about our teams and job openings
+          We’d love to hear from you! Whether you have questions about our exhibitions, are interested in purchasing artwork, or want to collaborate, feel free to reach out. Our team is here to assist you with any inquiries.
           </p>
           <p className="border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500">
-            Explore Jobs
+          Get in Touch
           </p>
         </div>
       </div>

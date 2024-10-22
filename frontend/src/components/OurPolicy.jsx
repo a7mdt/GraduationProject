@@ -12,7 +12,7 @@ const OurPolicy = () => {
             <div>
                 <img src={assets.repair} className="w-12 m-auto mb-5" alt="" />
                 <p className="font-semibold">Repair any damage immediately</p>
-                <p className="text-gray-400">We provide 7 days free repair for any piece</p>
+                <p className="text-gray-400">We provide free repair for any piece</p>
             </div>
             <div>
                 <img src={assets.support_img} className="w-12 m-auto mb-5" alt="" />
