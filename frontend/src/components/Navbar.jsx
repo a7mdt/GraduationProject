@@ -145,14 +145,29 @@ const Navbar = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Retrieve the logged-in user's name from local storage
     const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
     if (loggedInUser && loggedInUser.name) {
       setUsername(loggedInUser.name);
     }
   }, []);
 
-  // Logout function
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+      if (loggedInUser && loggedInUser.name) {
+        setUsername(loggedInUser.name);
+      } else {
+        setUsername("");
+      }
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+
+    return () => {
+      window.removeEventListener("storage", handleStorageChange);
+    };
+  }, []);
+
   const handleLogout = () => {
     localStorage.removeItem("loggedInUser");
     localStorage.setItem("isLoggedIn", "false");
@@ -160,25 +175,15 @@ const Navbar = () => {
     setShowDropdown(false); // Close the dropdown on logout
   };
 
-  // Toggle User/Admin dropdown visibility
   const toggleUserAdminDropdown = () => {
     setShowUserAdminDropdown((prev) => !prev);
   };
-
-  // Redirect to user or admin login page
-  // const handleUserAdminSelect = (type) => {
-  //   if (type === "user") {
-  //     navigate("login"); // Redirect to user login page
-  //   } else if (type === "admin") {
-  //     navigate("/admin-login"); // Redirect to admin login page
-  //   }
-  // };
 
   const handleUserAdminSelect = (type) => {
     if (type === "user") {
       navigate("login"); // Redirect to user login page
     } else if (type === "admin") {
-      const redirectUrl = "http://localhost:5174/";//this link 
+      const redirectUrl = "http://localhost:5174/"; //this link 
       window.location.href = redirectUrl; // Redirect to external admin page
     }
   };
@@ -216,53 +221,59 @@ const Navbar = () => {
           />
         </Link>
         {username ? (
-          <div className="relative">
+          <div
+            className="relative"
+            onMouseEnter={() => setShowDropdown(true)}
+            onMouseLeave={() => setShowDropdown(false)}
+          >
             <p
-              onClick={() => setShowDropdown(!showDropdown)}
               className="text-black font-semibold cursor-pointer flex items-center"
             >
-              Hello, {username} <span className="ml-1">&#9662;</span> {/* Down arrow */}
+              Hello, {username}
             </p>
             {showDropdown && (
               <div
                 id="dropdown-menu"
-                className="absolute right-0 mt-2 w-37 bg-white shadow-md z-10 rounded-lg overflow-hidden"
+                className="absolute right-0 mt-2 w-48 bg-white shadow-md z-10 rounded-lg overflow-hidden"
               >
                 <Link to="/Orders">
-                  <button className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded cursor-pointer hover:text-black">
+                  <button className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200">
                     Orders
                   </button>
                 </Link>
                 <button
                   onClick={handleLogout}
-                  className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded cursor-pointer hover:text-black"
+                  className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200"
                 >
                   Logout
                 </button>
               </div>
-          )}
+            )}
           </div>
         ) : (
-          <div className="relative">
+          <div
+            className="relative"
+            onMouseEnter={() => setShowUserAdminDropdown(true)}
+            onMouseLeave={() => setShowUserAdminDropdown(false)}
+          >
             <img
               className="w-5 cursor-pointer"
               src={assets.profile_icon}
               alt=""
-              onClick={toggleUserAdminDropdown}
             />
             {showUserAdminDropdown && (
               <div
-                className="absolute right-0 mt-2 w-37 bg-white shadow-md z-10 rounded-lg overflow-hidden"
+                className="absolute right-0 mt-2 w-48 bg-white shadow-md z-10 rounded-lg overflow-hidden"
               >
                 <button
                   onClick={() => handleUserAdminSelect("user")}
-                  className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded cursor-pointer hover:text-black"
+                  className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200 "
                 >
                   User
                 </button>
                 <button
                   onClick={() => handleUserAdminSelect("admin")}
-                  className="flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded cursor-pointer hover:text-black"
+                  className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200"
                 >
                   Admin
                 </button>
@@ -282,9 +293,9 @@ const Navbar = () => {
           alt=""
           className="w-5 cursor-pointer sm:hidden"
         />
-     </div>
+      </div>
       {/* sidebar menu for small screens */}
-       <div
+      <div
         className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${
           visible ? "w-full" : "w-0"
         } `}
@@ -332,3 +343,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
