@@ -380,7 +380,7 @@
 // // export default ShopContextProvider;
 
 import { createContext, useState } from "react";
-import { products } from "../assets/assets";
+import { products, artists } from "../assets/assets";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
@@ -389,6 +389,8 @@ export const ShopContext = createContext();
 const ShopContextProvider = (props) => {
   const currency = "$";
   const delivery_fee = 10;
+
+  const [allArtists, setAllArtists] = useState(artists);
 
   // Search state
   const [search, setSearch] = useState("");
@@ -480,6 +482,7 @@ const ShopContextProvider = (props) => {
     placeOrder, // Provide placeOrder function
     orders, // Provide orders state
     navigate,
+    artists: allArtists,
   };
 
   return (

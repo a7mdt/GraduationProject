@@ -81,7 +81,16 @@ import p_img78 from "./p_img78.png";
 import p_img79 from "./p_img79.png";
 import p_img80 from "./p_img80.png";
 
-
+import Claude_Monet from "./Artists/Claude_Monet.jpg";
+import Georgia_OKeeffe from "./Artists/Georgia_OKeeffe.jpg";
+import Pablo_Picasso from "./Artists/Pablo_Picasso.jpg";
+import Salvador_Dali from "./Artists/Salvador_Dali.jpg";
+import Henri_Matisse from "./Artists/Henri_Matisse.jpg";
+import Johannes_Vermeer from "./Artists/Johannes_Vermeer.jpg";
+import Leonardo_Da_Vinci from "./Artists/Leonardo_Da_Vinci.jpg";
+import Michelangelo_Buonarroti from "./Artists/Michelangelo_Buonarroti.png";
+import Van_Gogh from "./Artists/Van_Gogh.jpg";
+import Van_Rijn_Herman_Doomer from "./Artists/Van_Rijn_Herman_Doomer.jpg";
 
 import logo from "./logo.png";
 import hero_img from "./hero_img.png";
@@ -141,9 +150,82 @@ export const assets = {
   facebook,
   instagram,
   linkedin,
-
-
 };
+
+export const artists = [
+  {
+    id: "001",
+    img: [Claude_Monet],
+    name: "Claude Monet",
+    description: "Claude Monet was a French painter, a founder of French Impressionist painting. He is best known for his landscape paintings, particularly of his gardens in Giverny. Monet’s work focused on capturing light and natural forms, often painting the same scene at different times of day to show the changes in light and weather.",
+    duration: "1840-1926"
+  },
+  {
+    id: "002",
+    img: [Georgia_OKeeffe],
+    name: "Georgia O'Keeffe",
+    description: "Georgia O'Keeffe was an American modernist artist known for her large-format paintings of flowers, skyscrapers, and landscapes. She is often recognized as the 'Mother of American Modernism' for her bold, pioneering style. Her works explore abstraction and have a distinct, almost surreal quality, reflecting her unique view of the natural world.",
+    duration: "1887-1986"
+  },
+  {
+    id: "003",
+    img: [Pablo_Picasso],
+    name: "Pablo Picasso",
+    description: "Pablo Picasso was a Spanish painter, sculptor, printmaker, and one of the most influential artists of the 20th century. He co-founded the Cubist movement and made major contributions to Surrealism and Symbolism. Picasso is famous for works like 'Guernica' and 'Les Demoiselles d'Avignon,' and his art evolved through various periods, including the Blue Period and the Rose Period.",
+    duration: "1881-1973"
+  },
+  {
+    id: "004",
+    img: [Salvador_Dali],
+    name: "Salvador Dalí",
+    description: "Salvador Dalí was a Spanish surrealist artist renowned for his eccentric and dreamlike artworks. His most famous painting, 'The Persistence of Memory,' with its melting clocks, showcases his fascination with the subconscious, time, and dreams. Dalí's work was heavily influenced by Freudian theories and had a profound impact on Surrealism as an art movement.",
+    duration: "1904-1989"
+  },
+  {
+    id: "005",
+    img: [Henri_Matisse],
+    name: "Henri Matisse",
+    description: "Henri Matisse was a French artist known for his use of color and his fluid, original draftsmanship. He is one of the most prominent figures in modern art and is often associated with the Fauvism movement. Matisse’s later works, especially his paper cut-outs, are famous for their simplicity and boldness of color and form, emphasizing pure visual expression.",
+    duration: "1869-1954"
+  },
+  {
+    id: "006",
+    img: [Van_Rijn_Herman_Doomer],
+    name: "Rembrandt van Rijn",
+    description: "Rembrandt van Rijn was a Dutch Golden Age painter, widely considered one of the greatest visual artists in the history of art and one of the most important in Dutch history. Known for his portraits, self-portraits, and depictions of biblical scenes, Rembrandt’s use of light and shadow, particularly in his portraits, is unparalleled.",
+    duration: "1606-1669"
+  },
+  {
+    id: "007",
+    img: [Johannes_Vermeer],
+    name: "Johannes Vermeer",
+    description: "Johannes Vermeer was a Dutch Baroque painter known for his meticulous attention to detail and masterful use of light. He is best known for his genre paintings depicting domestic interior scenes of middle-class life. Vermeer’s works, such as 'Girl with a Pearl Earring' and 'The Milkmaid,' are celebrated for their tranquility and intricate depictions of everyday life.",
+    duration: "1632-1675"
+  },
+  {
+    id: "008",
+    img: [Leonardo_Da_Vinci],
+    name: "Leonardo Da Vinci",
+    description: "Leonardo Da Vinci was an Italian polymath whose areas of interest included invention, painting, sculpting, architecture, science, and anatomy. He is widely regarded as one of the greatest painters in history. His works, such as 'The Last Supper' and 'Mona Lisa,' are iconic. Da Vinci’s artistic output combined his scientific studies with profound artistic sensitivity.",
+    duration: "1452-1519"
+  },
+  {
+    id: "009",
+    img: [Michelangelo_Buonarroti],
+    name: "Michelangelo Buonarroti",
+    description: "Michelangelo Buonarroti was an Italian sculptor, painter, architect, and poet of the High Renaissance. His most notable works include the statue of 'David,' the 'Pietà,' and his frescoes on the ceiling of the Sistine Chapel. Michelangelo’s artistry set a new standard for Renaissance art, and his works convey a profound understanding of human anatomy and emotion.",
+    duration: "1475-1564"
+  },
+  {
+    id: "010",
+    img: [Van_Gogh],
+    name: "Vincent Van Gogh",
+    description: "Vincent Van Gogh was a Dutch Post-Impressionist painter known for his bold, expressive use of color and emotional honesty. His work, which includes famous pieces such as 'The Starry Night' and 'Sunflowers,' was not fully appreciated during his lifetime, but Van Gogh is now considered one of the most influential artists in Western art history.",
+    duration: "1853-1890"
+  },
+];
+
+
 export const products = [
   {
     _id: "aaaaa",

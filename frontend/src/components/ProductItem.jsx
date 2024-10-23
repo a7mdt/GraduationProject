@@ -8,19 +8,18 @@ const ProductItem = ({ id, image, name, price }) => {
 
   return (
     <Link className="text-gray-700 cursor-pointer mx-2 " to={`/product/${id}`}> 
-    {/* mx-2 no p */}
-      <div className="overflow-hidden">
+      <div className="flex flex-col items-center p-4">
         <img
           src={image[0]}
-          className="hover:scale-110 transition ease-in-out max-h-64"
+          className="w-full h-[300px] object-cover max-w-[200px] shadow-lg hover:shadow-xl hover:scale-110 transition ease-in-out duration-300"
           alt=""
         />
-      </div>
       <p className="pt-3 pb-1 text-sm">{name}</p>
       <p className="text-sm font-medium">
         {currency}
         {price}
       </p>
+      </div>
     </Link>
   );
 };
