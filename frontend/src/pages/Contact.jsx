@@ -24,7 +24,9 @@ const Contact = () => {
           <p className="text-gray-500">Tel:  047-13246759</p>
           <p className="font-semibold text-gray-600">We're Here to Help</p>
           <p className="text-gray-500">
-          We’d love to hear from you! Whether you have questions about our exhibitions, are interested in purchasing artwork, or want to collaborate, feel free to reach out. Our team is here to assist you with any inquiries.
+          We’d love to hear from you! Whether you have questions about our exhibitions,<br />
+           are interested in purchasing artwork, or want to collaborate, feel free to reach out. <br />
+            Our team is here to assist you with any inquiries.
           </p>
           <p className="border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500">
           Get in Touch
