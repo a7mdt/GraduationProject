@@ -113,13 +113,13 @@ const Navbar = () => {
                 className="absolute right-0 w-40 bg-white z-10  overflow-hidden pt-4"
               >
                 <Link to="/Orders">
-                  <button className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200">
+                  <button className="block w-full text-left px-4 py-2 text-black bg-gray-100 hover:bg-gray-200">
                     Orders
                   </button>
                 </Link>
                 <button
                   onClick={handleLogout}
-                  className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200"
+                  className="block w-full text-left px-4 py-2 text-black bg-gray-100 hover:bg-gray-200"
                 >
                   Logout
                 </button>
