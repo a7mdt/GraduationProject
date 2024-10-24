@@ -132,7 +132,7 @@ const PlaceOrder = () => {
         </div>
         <input 
           className='border border-gray-300 rounded py-1.5 px-3.5 w-full' 
-          type='number' 
+          type='text' 
           placeholder='Phone' 
           value={phone} 
           onChange={(e) => setPhone(e.target.value)} 

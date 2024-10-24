@@ -11,7 +11,9 @@ const Home = () => {
       <Hero />
       <LatestCollection />
       <Artists/>
+       <NewsLetterBox />
       <OurPolicy />
+     
     </div>
   );
 };

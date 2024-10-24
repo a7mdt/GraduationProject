@@ -36,11 +36,22 @@ const Navbar = () => {
   }, []);
 
   const handleLogout = () => {
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    
+    if (loggedInUser && loggedInUser.email) {
+      // Clear cart data for the logged-in user
+      localStorage.removeItem(loggedInUser.email + "_cart"); // Assuming you store cart items with the email key
+    }
+  
+    // Clear user session data
     localStorage.removeItem("loggedInUser");
     localStorage.setItem("isLoggedIn", "false");
     setUsername("");
     setShowDropdown(false); // Close the dropdown on logout
+    navigate("/");
+    window.location.reload();
   };
+  
 
   const toggleUserAdminDropdown = () => {
     setShowUserAdminDropdown((prev) => !prev);
@@ -102,13 +113,13 @@ const Navbar = () => {
                 className="absolute right-0 w-40 bg-white z-10  overflow-hidden pt-4"
               >
                 <Link to="/Orders">
-                  <button className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200">
+                  <button className="block w-full text-left px-4 py-2 text-black bg-gray-100 hover:bg-gray-200">
                     Orders
                   </button>
                 </Link>
                 <button
                   onClick={handleLogout}
-                  className="block w-full text-left px-4 py-2 text-black hover:bg-gray-200"
+                  className="block w-full text-left px-4 py-2 text-black bg-gray-100 hover:bg-gray-200"
                 >
                   Logout
                 </button>

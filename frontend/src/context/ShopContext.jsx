@@ -1,4 +1,5 @@
-import { createContext, useState } from "react";
+
+import { createContext, useState, useEffect } from "react";
 import { products, artists } from "../assets/assets";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
@@ -17,8 +18,22 @@ const ShopContextProvider = (props) => {
 
   // Cart state
   const [cartItems, setCartItems] = useState({});
-  const [orders, setOrders] = useState([]); // New state to store orders
+  const [orders, setOrders] = useState([]);
   const navigate = useNavigate();
+
+  // Get the logged-in user's email
+  const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+  const userEmail = loggedInUser?.email;
+
+  // Load cart from localStorage if the user is logged in
+  useEffect(() => {
+    if (userEmail) {
+      const savedCart = JSON.parse(localStorage.getItem(`cart_${userEmail}`));
+      if (savedCart) {
+        setCartItems(savedCart);
+      }
+    }
+  }, [userEmail]);
 
   // Add item to cart
   const addToCart = (itemId, size) => {
@@ -34,17 +49,13 @@ const ShopContextProvider = (props) => {
       cartData[itemId] = {};
       cartData[itemId][size] = 1;
     }
-    setCartItems(cartData);
-  };
 
-  // Get total count of items in cart
-  const getCartCount = () => {
-    return Object.values(cartItems).reduce((count, itemSizes) => {
-      return (
-        count +
-        Object.values(itemSizes).reduce((sum, quantity) => sum + quantity, 0)
-      );
-    }, 0);
+    setCartItems(cartData);
+    
+    // Save updated cart to localStorage
+    if (userEmail) {
+      localStorage.setItem(`cart_${userEmail}`, JSON.stringify(cartData));
+    }
   };
 
   // Update item quantity in cart
@@ -61,6 +72,21 @@ const ShopContextProvider = (props) => {
     }
 
     setCartItems(cartData);
+
+    // Save updated cart to localStorage
+    if (userEmail) {
+      localStorage.setItem(`cart_${userEmail}`, JSON.stringify(cartData));
+    }
+  };
+
+  // Get total count of items in cart
+  const getCartCount = () => {
+    return Object.values(cartItems).reduce((count, itemSizes) => {
+      return (
+        count +
+        Object.values(itemSizes).reduce((sum, quantity) => sum + quantity, 0)
+      );
+    }, 0);
   };
 
   // Get total amount in cart
@@ -80,9 +106,26 @@ const ShopContextProvider = (props) => {
   // Place an order
   const placeOrder = (orderDetails) => {
     setOrders((prevOrders) => [...prevOrders, orderDetails]);
-    // Optionally clear cart items after placing an order
+    
+    // Clear cart after placing an order
     setCartItems({});
+    
+    // Clear the user's cart in localStorage
+    if (userEmail) {
+      localStorage.removeItem(`cart_${userEmail}`);
+    }
+
     toast.success("Order placed successfully!");
+  };
+
+  // Handle logout (clear cart and localStorage)
+  const handleLogout = () => {
+    setCartItems({});
+    if (userEmail) {
+      localStorage.removeItem(`cart_${userEmail}`);
+    }
+    localStorage.removeItem("loggedInUser");
+    navigate("/login");
   };
 
   const value = {
@@ -98,8 +141,9 @@ const ShopContextProvider = (props) => {
     getCartCount,
     updateQuantity,
     getCartAmount,
-    placeOrder, // Provide placeOrder function
-    orders, // Provide orders state
+    placeOrder,
+    orders,
+    handleLogout,
     navigate,
     artists: allArtists,
   };
