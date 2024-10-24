@@ -9,6 +9,7 @@ const Cart = () => {
   const [cartData, setCartData] = useState([]);
   const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
 
+  
   useEffect(() => {
     const tempData = [];
     for (const items in cartItems) {
