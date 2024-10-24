@@ -1,22 +1,26 @@
 import { useContext, useEffect, useState } from "react";
 import { ShopContext } from "../context/ShopContext";
 import { assets } from "../assets/assets";
-import {useLocation} from 'react-router-dom'
+import { useLocation } from "react-router-dom";
 
 const SearchBar = () => {
-  const { search, setSearch, showSearch, setShowSearch } = useContext(ShopContext);
+  const { search, setSearch, showSearch, setShowSearch, products } =
+    useContext(ShopContext); 
 
-  const [visible,setVisible]= useState(false);
+  const [visible, setVisible] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
-    if(location.pathname.includes('collection')){
-        setVisible(true)
-    }
-    else{
-        setVisible(false)
+    if (location.pathname.includes("collection")) {
+      setVisible(true);
+    } else {
+      setVisible(false);
     }
   }, [location]);
+
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(search.toLowerCase())
+  );
 
   return showSearch && visible ? (
     <div className="border-t border-b bg-gray-50 text-center">
@@ -36,6 +40,11 @@ const SearchBar = () => {
         src={assets.cross_icon}
         alt=""
       />
+      {search && filteredProducts.length === 0 && (
+        <div className="mt-4 text-gray-500 text-center">
+          There aren't any matched products
+        </div>
+      )}
     </div>
   ) : null;
 };

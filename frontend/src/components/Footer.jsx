@@ -4,8 +4,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <div>
-            <div className="flex flex-col sm:grid grid-cols-[1fr_1fr_1fr_1fr] gap-14 my-10 mt-40 text-sm">
+        <div className="mt-40">
+            <hr />
+            <div className="flex flex-col sm:grid grid-cols-[1fr_1fr_1fr_1fr] gap-14 my-10 text-sm">
                 <div>
                     {/* <img src={assets.logo} className="mb-5 w-32" alt="" /> */}
                     <p className="text-xl font-medium mb-5">EXPLORE US</p>
@@ -16,16 +17,14 @@ const Footer = () => {
                     </p>
                 </div>
 
-             
-             
                 <div>
                     <p className="text-xl font-medium mb-5">COMPANY</p>
                     <ul className="flex flex-col gap-1 text-gray-600">
-                        <Link to="/"><li>Home</li></Link>
-                        <Link to="/Collection"><li>Collection</li></Link>
-                        <Link to="/Contact"><li>Contact</li></Link>
-                        <Link to="/About"><li>About us</li></Link>
-                        <Link to="/"><li>Privacy policy</li></Link>
+                        <Link to="/"><li className="hover:text-black transition-all duration-500">Home</li></Link>
+                        <Link to="/Collection"><li className="hover:text-black transition-all duration-500">Collection</li></Link>
+                        <Link to="/Contact"><li className="hover:text-black transition-all duration-500">Contact</li></Link>
+                        <Link to="/About"><li className="hover:text-black transition-all duration-500">About us</li></Link>
+                        <Link to="/"><li className="hover:text-black transition-all duration-500">Privacy policy</li></Link>
                     </ul>
                 </div>
                 <div>

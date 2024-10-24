@@ -120,6 +120,7 @@ import mobile from "./mobile.png"
 import facebook from "./facebook.png"
 import instagram from "./instagram.png"
 import linkedin from "./linkedin.png"
+import paybal from "./paypal.svg"
 
 export const assets = {
   logo,
@@ -150,6 +151,7 @@ export const assets = {
   facebook,
   instagram,
   linkedin,
+  paybal
 };
 
 export const artists = [

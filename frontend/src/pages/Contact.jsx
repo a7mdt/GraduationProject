@@ -21,19 +21,24 @@ const Contact = () => {
           <p className="text-gray-500">Email: diagonalley@gmail.com </p>
           <p className="text-gray-500">Address: 22 Old Street </p>
           <p className="text-gray-500">Phone: +2-01012345689</p>
-          <p className="text-gray-500">Tel:  047-13246759</p>
+          <p className="text-gray-500">Tel: 047-13246759</p>
           <p className="font-semibold text-gray-600">We're Here to Help</p>
           <p className="text-gray-500">
-          We’d love to hear from you! Whether you have questions about our exhibitions,<br />
-           are interested in purchasing artwork, or want to collaborate, feel free to reach out. <br />
-            Our team is here to assist you with any inquiries.
-          </p>
-          <p className="border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500">
-          Get in Touch
+            Thank you for visiting Diagon Alley Art Gallery!  <br /> We are thrilled to
+            be a vibrant part of the artistic community, dedicated to showcasing
+            a diverse range of contemporary and classic artworks.  <br />Our gallery
+            features an exquisite collection that includes works from both
+            emerging talents and established artists, offering visitors an
+            opportunity to immerse themselves in the transformative power of
+            art. <br /> At Diagon Alley, we believe that art is a universal
+            language that connects people and inspires creativity. Whether you
+            are an avid art collector, a casual admirer, or someone new to the
+            world of art, our welcoming atmosphere invites you to explore,
+            appreciate, and engage with the various pieces on display.
           </p>
         </div>
       </div>
-     <NewsLetterBox/>
+      <NewsLetterBox />
     </div>
   );
 };

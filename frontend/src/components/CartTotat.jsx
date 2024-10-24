@@ -33,8 +33,3 @@ const CartTotal = () => {
 }
 
 export default CartTotal
-
-// made by yomna
-// we start this page at (4:04:04) & left (3:58:47)
-// we back at (4:07:59) & left (4:12:27)
-// we back at (4:14:54) & left (4:15:42)
