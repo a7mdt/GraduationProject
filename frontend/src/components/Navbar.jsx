@@ -36,11 +36,22 @@ const Navbar = () => {
   }, []);
 
   const handleLogout = () => {
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    
+    if (loggedInUser && loggedInUser.email) {
+      // Clear cart data for the logged-in user
+      localStorage.removeItem(loggedInUser.email + "_cart"); // Assuming you store cart items with the email key
+    }
+  
+    // Clear user session data
     localStorage.removeItem("loggedInUser");
     localStorage.setItem("isLoggedIn", "false");
     setUsername("");
     setShowDropdown(false); // Close the dropdown on logout
+    navigate("/");
+    window.location.reload();
   };
+  
 
   const toggleUserAdminDropdown = () => {
     setShowUserAdminDropdown((prev) => !prev);
